@@ -1,0 +1,4357 @@
+[
+  {
+    "offset" : 0,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.comment"
+  },
+  {
+    "offset" : 3,
+    "length" : 17,
+    "type" : "source.lang.swift.syntaxtype.comment"
+  },
+  {
+    "offset" : 20,
+    "length" : 16,
+    "type" : "source.lang.swift.syntaxtype.comment"
+  },
+  {
+    "offset" : 36,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.comment"
+  },
+  {
+    "offset" : 39,
+    "length" : 50,
+    "type" : "source.lang.swift.syntaxtype.comment"
+  },
+  {
+    "offset" : 89,
+    "length" : 65,
+    "type" : "source.lang.swift.syntaxtype.comment"
+  },
+  {
+    "offset" : 154,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.comment"
+  },
+  {
+    "offset" : 158,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 165,
+    "length" : 10,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 176,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 183,
+    "length" : 19,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 203,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 210,
+    "length" : 8,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 219,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 226,
+    "length" : 5,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 234,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.comment"
+  },
+  {
+    "offset" : 237,
+    "length" : 27,
+    "type" : "source.lang.swift.syntaxtype.comment"
+  },
+  {
+    "offset" : 264,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.comment"
+  },
+  {
+    "offset" : 268,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.attribute.builtin"
+  },
+  {
+    "offset" : 275,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 282,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 295,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.attribute.builtin"
+  },
+  {
+    "offset" : 302,
+    "length" : 9,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 312,
+    "length" : 19,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 334,
+    "length" : 5,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 340,
+    "length" : 12,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 355,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.attribute.builtin"
+  },
+  {
+    "offset" : 362,
+    "length" : 9,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 372,
+    "length" : 5,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 380,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 391,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.attribute.builtin"
+  },
+  {
+    "offset" : 398,
+    "length" : 9,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 408,
+    "length" : 7,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 418,
+    "length" : 9,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 433,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.attribute.builtin"
+  },
+  {
+    "offset" : 440,
+    "length" : 12,
+    "type" : "source.lang.swift.syntaxtype.attribute.builtin"
+  },
+  {
+    "offset" : 453,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 457,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 469,
+    "length" : 19,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 495,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.attribute.builtin"
+  },
+  {
+    "offset" : 502,
+    "length" : 12,
+    "type" : "source.lang.swift.syntaxtype.attribute.builtin"
+  },
+  {
+    "offset" : 515,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 519,
+    "length" : 9,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 531,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 538,
+    "length" : 15,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 561,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.comment"
+  },
+  {
+    "offset" : 568,
+    "length" : 21,
+    "type" : "source.lang.swift.syntaxtype.comment"
+  },
+  {
+    "offset" : 593,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.comment"
+  },
+  {
+    "offset" : 601,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.attribute.builtin"
+  },
+  {
+    "offset" : 608,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 628,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.attribute.builtin"
+  },
+  {
+    "offset" : 635,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 640,
+    "length" : 5,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 646,
+    "length" : 12,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 670,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 677,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 685,
+    "length" : 5,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 701,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.attribute.builtin"
+  },
+  {
+    "offset" : 708,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 714,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 717,
+    "length" : 12,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 730,
+    "length" : 5,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 736,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 738,
+    "length" : 9,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 748,
+    "length" : 7,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 759,
+    "length" : 12,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 774,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 776,
+    "length" : 8,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 786,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 799,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 806,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 817,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 824,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 831,
+    "length" : 8,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 850,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.comment"
+  },
+  {
+    "offset" : 857,
+    "length" : 22,
+    "type" : "source.lang.swift.syntaxtype.comment"
+  },
+  {
+    "offset" : 883,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.comment"
+  },
+  {
+    "offset" : 891,
+    "length" : 30,
+    "type" : "source.lang.swift.syntaxtype.comment"
+  },
+  {
+    "offset" : 925,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.attribute.builtin"
+  },
+  {
+    "offset" : 932,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 937,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 942,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 945,
+    "length" : 20,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 968,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 972,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 983,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 996,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 1003,
+    "length" : 27,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 1031,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 1035,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 1052,
+    "length" : 52,
+    "type" : "source.lang.swift.syntaxtype.comment"
+  },
+  {
+    "offset" : 1108,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.attribute.builtin"
+  },
+  {
+    "offset" : 1115,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 1120,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 1125,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 1129,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 1140,
+    "length" : 9,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 1161,
+    "length" : 2,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 1164,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 1168,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 1173,
+    "length" : 9,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 1185,
+    "length" : 24,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 1210,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 1216,
+    "length" : 17,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 1234,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 1253,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 1260,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 1282,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 1289,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 1305,
+    "length" : 24,
+    "type" : "source.lang.swift.syntaxtype.comment"
+  },
+  {
+    "offset" : 1333,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.attribute.builtin"
+  },
+  {
+    "offset" : 1340,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 1345,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 1350,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 1353,
+    "length" : 20,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 1375,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 1378,
+    "length" : 20,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 1401,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 1406,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 1410,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 1418,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 1420,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 1424,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 1436,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 1440,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 1454,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 1462,
+    "length" : 27,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 1490,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 1494,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 1500,
+    "length" : 27,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 1528,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 1532,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 1550,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.attribute.builtin"
+  },
+  {
+    "offset" : 1557,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 1562,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 1567,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 1570,
+    "length" : 20,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 1592,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 1595,
+    "length" : 20,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 1617,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 1620,
+    "length" : 20,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 1651,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 1656,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 1660,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 1668,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 1670,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 1674,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 1682,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 1684,
+    "length" : 5,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 1690,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 1702,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 1706,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 1710,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 1728,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 1736,
+    "length" : 27,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 1764,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 1768,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 1774,
+    "length" : 27,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 1802,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 1806,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 1812,
+    "length" : 27,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 1840,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 1844,
+    "length" : 5,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 1864,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.attribute.builtin"
+  },
+  {
+    "offset" : 1871,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 1876,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 1881,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 1884,
+    "length" : 20,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 1906,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 1909,
+    "length" : 20,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 1931,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 1934,
+    "length" : 20,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 1956,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 1959,
+    "length" : 20,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 1990,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 1995,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 1999,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 2007,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 2009,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 2013,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 2021,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 2023,
+    "length" : 5,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 2029,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 2037,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 2039,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 2044,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 2056,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 2060,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 2064,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 2068,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 2090,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 2098,
+    "length" : 27,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 2126,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 2130,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 2156,
+    "length" : 27,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 2184,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 2188,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 2214,
+    "length" : 27,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 2242,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 2246,
+    "length" : 5,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 2274,
+    "length" : 27,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 2302,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 2306,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 2325,
+    "length" : 32,
+    "type" : "source.lang.swift.syntaxtype.comment"
+  },
+  {
+    "offset" : 2361,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.attribute.builtin"
+  },
+  {
+    "offset" : 2368,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 2373,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 2378,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 2381,
+    "length" : 20,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 2404,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 2408,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 2420,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 2434,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 2441,
+    "length" : 32,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 2474,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 2479,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 2486,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 2488,
+    "length" : 15,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 2504,
+    "length" : 2,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 2522,
+    "length" : 51,
+    "type" : "source.lang.swift.syntaxtype.comment"
+  },
+  {
+    "offset" : 2577,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.attribute.builtin"
+  },
+  {
+    "offset" : 2584,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 2589,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 2594,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 2597,
+    "length" : 20,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 2621,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 2626,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 2641,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 2655,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 2662,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 2670,
+    "length" : 9,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 2682,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 2687,
+    "length" : 27,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 2715,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 2719,
+    "length" : 2,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 2737,
+    "length" : 34,
+    "type" : "source.lang.swift.syntaxtype.comment"
+  },
+  {
+    "offset" : 2775,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.attribute.builtin"
+  },
+  {
+    "offset" : 2782,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 2787,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 2792,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 2795,
+    "length" : 20,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 2819,
+    "length" : 7,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 2828,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 2840,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 2857,
+    "length" : 2,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 2860,
+    "length" : 7,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 2868,
+    "length" : 5,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 2877,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.number"
+  },
+  {
+    "offset" : 2893,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 2900,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 2904,
+    "length" : 7,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 2912,
+    "length" : 5,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 2939,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 2943,
+    "length" : 7,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 2954,
+    "length" : 7,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 2962,
+    "length" : 5,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 2977,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 2981,
+    "length" : 8,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 2992,
+    "length" : 5,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 2998,
+    "length" : 7,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 3007,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.number"
+  },
+  {
+    "offset" : 3013,
+    "length" : 7,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 3021,
+    "length" : 8,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 3041,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 3045,
+    "length" : 11,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 3059,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 3063,
+    "length" : 7,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 3072,
+    "length" : 2,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 3075,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 3090,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 3097,
+    "length" : 11,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 3109,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 3113,
+    "length" : 7,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 3121,
+    "length" : 8,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 3143,
+    "length" : 38,
+    "type" : "source.lang.swift.syntaxtype.comment"
+  },
+  {
+    "offset" : 3185,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.attribute.builtin"
+  },
+  {
+    "offset" : 3192,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 3197,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 3202,
+    "length" : 7,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 3211,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 3223,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 3245,
+    "length" : 2,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 3248,
+    "length" : 7,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 3256,
+    "length" : 5,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 3265,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.number"
+  },
+  {
+    "offset" : 3281,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 3288,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 3292,
+    "length" : 7,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 3300,
+    "length" : 5,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 3327,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 3331,
+    "length" : 7,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 3342,
+    "length" : 7,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 3350,
+    "length" : 5,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 3365,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 3369,
+    "length" : 8,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 3380,
+    "length" : 5,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 3386,
+    "length" : 7,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 3395,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.number"
+  },
+  {
+    "offset" : 3401,
+    "length" : 7,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 3409,
+    "length" : 8,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 3429,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 3433,
+    "length" : 11,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 3447,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 3451,
+    "length" : 7,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 3460,
+    "length" : 2,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 3463,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 3478,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 3485,
+    "length" : 11,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 3497,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 3501,
+    "length" : 7,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 3509,
+    "length" : 8,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 3530,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.attribute.builtin"
+  },
+  {
+    "offset" : 3537,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 3542,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 3547,
+    "length" : 7,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 3555,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 3569,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 3587,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 3594,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 3598,
+    "length" : 7,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 3606,
+    "length" : 7,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 3627,
+    "length" : 36,
+    "type" : "source.lang.swift.syntaxtype.comment"
+  },
+  {
+    "offset" : 3667,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.attribute.builtin"
+  },
+  {
+    "offset" : 3674,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 3679,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 3683,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 3687,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 3698,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 3719,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 3723,
+    "length" : 9,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 3735,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 3745,
+    "length" : 9,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 3757,
+    "length" : 2,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 3760,
+    "length" : 17,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 3778,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 3793,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 3797,
+    "length" : 9,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 3809,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 3816,
+    "length" : 9,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 3836,
+    "length" : 2,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 3839,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 3843,
+    "length" : 12,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 3858,
+    "length" : 9,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 3868,
+    "length" : 17,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 3886,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 3891,
+    "length" : 2,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 3895,
+    "length" : 15,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 3925,
+    "length" : 9,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 3935,
+    "length" : 9,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 3947,
+    "length" : 12,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 3979,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 3986,
+    "length" : 9,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 4008,
+    "length" : 62,
+    "type" : "source.lang.swift.syntaxtype.comment"
+  },
+  {
+    "offset" : 4074,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.attribute.builtin"
+  },
+  {
+    "offset" : 4081,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 4086,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 4091,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 4094,
+    "length" : 15,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 4112,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 4116,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 4127,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 4144,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 4148,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 4157,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 4161,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 4166,
+    "length" : 2,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 4169,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 4184,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 4191,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 4193,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 4200,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 4220,
+    "length" : 57,
+    "type" : "source.lang.swift.syntaxtype.comment"
+  },
+  {
+    "offset" : 4281,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.attribute.builtin"
+  },
+  {
+    "offset" : 4288,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 4293,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 4298,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 4301,
+    "length" : 20,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 4324,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 4328,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 4336,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 4340,
+    "length" : 7,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 4349,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 4355,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 4362,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 4364,
+    "length" : 9,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 4389,
+    "length" : 2,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 4393,
+    "length" : 20,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 4414,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 4433,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 4440,
+    "length" : 7,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 4448,
+    "length" : 28,
+    "type" : "source.lang.swift.syntaxtype.string"
+  },
+  {
+    "offset" : 4478,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 4482,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.string"
+  },
+  {
+    "offset" : 4506,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 4510,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 4519,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 4523,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 4528,
+    "length" : 2,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 4531,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 4546,
+    "length" : 7,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 4554,
+    "length" : 9,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 4564,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 4580,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 4587,
+    "length" : 7,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 4595,
+    "length" : 5,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 4615,
+    "length" : 89,
+    "type" : "source.lang.swift.syntaxtype.comment"
+  },
+  {
+    "offset" : 4708,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.attribute.builtin"
+  },
+  {
+    "offset" : 4715,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 4720,
+    "length" : 9,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 4731,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 4734,
+    "length" : 20,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 4757,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 4761,
+    "length" : 7,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 4769,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 4775,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 4782,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 4784,
+    "length" : 9,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 4805,
+    "length" : 7,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 4813,
+    "length" : 9,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 4823,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 4837,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 4844,
+    "length" : 7,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 4852,
+    "length" : 5,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 4872,
+    "length" : 36,
+    "type" : "source.lang.swift.syntaxtype.comment"
+  },
+  {
+    "offset" : 4912,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.attribute.builtin"
+  },
+  {
+    "offset" : 4919,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 4924,
+    "length" : 5,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 4930,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 4935,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 4949,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 4966,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 4973,
+    "length" : 5,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 4979,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 4996,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.attribute.builtin"
+  },
+  {
+    "offset" : 5003,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 5008,
+    "length" : 5,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 5014,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 5017,
+    "length" : 15,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 5035,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 5040,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 5054,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 5067,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 5074,
+    "length" : 5,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 5080,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 5097,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.attribute.builtin"
+  },
+  {
+    "offset" : 5104,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 5109,
+    "length" : 5,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 5115,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 5121,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 5133,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 5154,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 5158,
+    "length" : 13,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 5174,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 5178,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 5188,
+    "length" : 2,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 5191,
+    "length" : 19,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 5211,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 5227,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 5231,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 5240,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 5247,
+    "length" : 13,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 5270,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 5277,
+    "length" : 9,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 5289,
+    "length" : 9,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 5299,
+    "length" : 19,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 5319,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 5333,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 5340,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 5359,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.attribute.builtin"
+  },
+  {
+    "offset" : 5366,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 5371,
+    "length" : 5,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 5377,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 5380,
+    "length" : 15,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 5398,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 5404,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 5416,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 5429,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 5433,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 5442,
+    "length" : 5,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 5448,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 5454,
+    "length" : 2,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 5457,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 5472,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 5479,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 5481,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 5489,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 5509,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.attribute.builtin"
+  },
+  {
+    "offset" : 5516,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 5521,
+    "length" : 7,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 5535,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 5543,
+    "length" : 9,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 5568,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 5573,
+    "length" : 18,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 5592,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 5596,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 5608,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 5616,
+    "length" : 9,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 5642,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 5646,
+    "length" : 8,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 5656,
+    "length" : 9,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 5669,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 5673,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 5690,
+    "length" : 2,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 5693,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 5697,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 5702,
+    "length" : 9,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 5714,
+    "length" : 8,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 5725,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 5733,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 5738,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 5757,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 5764,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 5771,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 5796,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 5803,
+    "length" : 13,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 5820,
+    "length" : 9,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 5830,
+    "length" : 18,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 5882,
+    "length" : 15,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 5900,
+    "length" : 2,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 5917,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.attribute.builtin"
+  },
+  {
+    "offset" : 5924,
+    "length" : 8,
+    "type" : "source.lang.swift.syntaxtype.attribute.builtin"
+  },
+  {
+    "offset" : 5933,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 5938,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 5942,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 5946,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 5954,
+    "length" : 5,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 5960,
+    "length" : 9,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 5982,
+    "length" : 9,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 5992,
+    "length" : 20,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 6013,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 6018,
+    "length" : 5,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 6036,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.attribute.builtin"
+  },
+  {
+    "offset" : 6043,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 6048,
+    "length" : 14,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 6063,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 6067,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 6078,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 6093,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 6100,
+    "length" : 24,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 6125,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 6133,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 6149,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.comment"
+  },
+  {
+    "offset" : 6156,
+    "length" : 34,
+    "type" : "source.lang.swift.syntaxtype.comment"
+  },
+  {
+    "offset" : 6194,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.comment"
+  },
+  {
+    "offset" : 6202,
+    "length" : 7,
+    "type" : "source.lang.swift.syntaxtype.attribute.builtin"
+  },
+  {
+    "offset" : 6210,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 6215,
+    "length" : 28,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 6245,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 6248,
+    "length" : 20,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 6279,
+    "length" : 15,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 6296,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 6298,
+    "length" : 15,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 6319,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 6328,
+    "length" : 9,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 6342,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 6345,
+    "length" : 29,
+    "type" : "source.lang.swift.syntaxtype.comment"
+  },
+  {
+    "offset" : 6388,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 6397,
+    "length" : 8,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 6406,
+    "length" : 2,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 6421,
+    "length" : 2,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 6424,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 6428,
+    "length" : 11,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 6442,
+    "length" : 8,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 6451,
+    "length" : 2,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 6455,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 6457,
+    "length" : 15,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 6491,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 6498,
+    "length" : 15,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 6514,
+    "length" : 11,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 6553,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 6560,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 6586,
+    "length" : 7,
+    "type" : "source.lang.swift.syntaxtype.attribute.builtin"
+  },
+  {
+    "offset" : 6594,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 6599,
+    "length" : 27,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 6628,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 6631,
+    "length" : 20,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 6655,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 6659,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 6667,
+    "length" : 9,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 6678,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 6680,
+    "length" : 15,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 6701,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 6709,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 6726,
+    "length" : 2,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 6729,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 6733,
+    "length" : 5,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 6741,
+    "length" : 24,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 6766,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 6793,
+    "length" : 2,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 6796,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 6800,
+    "length" : 11,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 6813,
+    "length" : 9,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 6825,
+    "length" : 5,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 6831,
+    "length" : 17,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 6849,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 6884,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 6888,
+    "length" : 11,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 6902,
+    "length" : 28,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 6931,
+    "length" : 9,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 6958,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 6965,
+    "length" : 11,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 6977,
+    "length" : 11,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 7022,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 7029,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 7045,
+    "length" : 7,
+    "type" : "source.lang.swift.syntaxtype.attribute.builtin"
+  },
+  {
+    "offset" : 7053,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 7058,
+    "length" : 27,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 7086,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 7089,
+    "length" : 20,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 7113,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 7117,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 7128,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 7141,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 7148,
+    "length" : 27,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 7176,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 7180,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 7187,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 7189,
+    "length" : 15,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 7205,
+    "length" : 2,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 7223,
+    "length" : 7,
+    "type" : "source.lang.swift.syntaxtype.attribute.builtin"
+  },
+  {
+    "offset" : 7231,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 7236,
+    "length" : 32,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 7269,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 7272,
+    "length" : 20,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 7296,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 7300,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 7308,
+    "length" : 11,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 7321,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 7323,
+    "length" : 15,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 7343,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 7351,
+    "length" : 1,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 7369,
+    "length" : 2,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 7372,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 7376,
+    "length" : 14,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 7392,
+    "length" : 9,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 7404,
+    "length" : 24,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 7429,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 7435,
+    "length" : 17,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 7453,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 7480,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 7484,
+    "length" : 18,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 7506,
+    "length" : 14,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 7521,
+    "length" : 2,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 7525,
+    "length" : 7,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 7547,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 7555,
+    "length" : 18,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 7574,
+    "length" : 2,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 7578,
+    "length" : 9,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 7593,
+    "length" : 9,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 7603,
+    "length" : 28,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 7632,
+    "length" : 11,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 7664,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 7671,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 7687,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.attribute.builtin"
+  },
+  {
+    "offset" : 7694,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 7699,
+    "length" : 24,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 7724,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 7728,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 7739,
+    "length" : 12,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 7767,
+    "length" : 2,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 7770,
+    "length" : 9,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 7780,
+    "length" : 20,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 7801,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 7820,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 7827,
+    "length" : 9,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 7856,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 7860,
+    "length" : 5,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 7866,
+    "length" : 2,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 7869,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 7890,
+    "length" : 2,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 7893,
+    "length" : 5,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 7899,
+    "length" : 20,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 7920,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 7943,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 7950,
+    "length" : 5,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 7988,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 7995,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 8011,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.comment"
+  },
+  {
+    "offset" : 8014,
+    "length" : 32,
+    "type" : "source.lang.swift.syntaxtype.comment"
+  },
+  {
+    "offset" : 8046,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.comment"
+  },
+  {
+    "offset" : 8050,
+    "length" : 9,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 8060,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 8068,
+    "length" : 12,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 8087,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.attribute.builtin"
+  },
+  {
+    "offset" : 8094,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 8098,
+    "length" : 13,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 8114,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 8132,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 8136,
+    "length" : 9,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 8149,
+    "length" : 9,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 8160,
+    "length" : 2,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 8163,
+    "length" : 5,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 8169,
+    "length" : 12,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 8185,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 8200,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 8207,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 8214,
+    "length" : 9,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 8226,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 8239,
+    "length" : 2,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 8244,
+    "length" : 2,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 8247,
+    "length" : 13,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 8278,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 8296,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.attribute.builtin"
+  },
+  {
+    "offset" : 8303,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 8308,
+    "length" : 20,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 8329,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 8334,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 8345,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 8360,
+    "length" : 2,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 8363,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 8367,
+    "length" : 5,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 8375,
+    "length" : 24,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 8400,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 8420,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 8427,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 8450,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 8457,
+    "length" : 5,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 8474,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.attribute.builtin"
+  },
+  {
+    "offset" : 8481,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 8486,
+    "length" : 17,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 8504,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 8509,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 8520,
+    "length" : 9,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 8541,
+    "length" : 2,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 8544,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 8548,
+    "length" : 5,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 8555,
+    "length" : 9,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 8567,
+    "length" : 24,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 8592,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 8598,
+    "length" : 17,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 8616,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 8635,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 8642,
+    "length" : 5,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 8666,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 8673,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 8688,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.attribute.builtin"
+  },
+  {
+    "offset" : 8695,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 8700,
+    "length" : 17,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 8718,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 8723,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 8734,
+    "length" : 12,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 8758,
+    "length" : 2,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 8761,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 8765,
+    "length" : 5,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 8773,
+    "length" : 24,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 8798,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 8804,
+    "length" : 17,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 8822,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 8841,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 8848,
+    "length" : 5,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 8872,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 8879,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 8894,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.attribute.builtin"
+  },
+  {
+    "offset" : 8901,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 8906,
+    "length" : 19,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 8926,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 8933,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 8945,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 8962,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 8969,
+    "length" : 5,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 8975,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 8992,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.comment"
+  },
+  {
+    "offset" : 8995,
+    "length" : 45,
+    "type" : "source.lang.swift.syntaxtype.comment"
+  },
+  {
+    "offset" : 9040,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.comment"
+  },
+  {
+    "offset" : 9044,
+    "length" : 9,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 9054,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 9062,
+    "length" : 9,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 9073,
+    "length" : 14,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 9094,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.attribute.builtin"
+  },
+  {
+    "offset" : 9101,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 9105,
+    "length" : 11,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 9118,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 9135,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 9139,
+    "length" : 8,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 9150,
+    "length" : 8,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 9159,
+    "length" : 7,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 9178,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 9185,
+    "length" : 11,
+    "type" : "source.lang.swift.syntaxtype.string"
+  },
+  {
+    "offset" : 9198,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 9205,
+    "length" : 5,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 9211,
+    "length" : 32,
+    "type" : "source.lang.swift.syntaxtype.string"
+  },
+  {
+    "offset" : 9245,
+    "length" : 8,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 9254,
+    "length" : 2,
+    "type" : "source.lang.swift.syntaxtype.string"
+  },
+  {
+    "offset" : 9268,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.attribute.builtin"
+  },
+  {
+    "offset" : 9275,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 9279,
+    "length" : 16,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 9297,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 9314,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 9318,
+    "length" : 8,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 9329,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 9334,
+    "length" : 7,
+    "type" : "source.lang.swift.syntaxtype.string"
+  },
+  {
+    "offset" : 9343,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 9347,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 9357,
+    "length" : 2,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 9360,
+    "length" : 16,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 9388,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 9395,
+    "length" : 11,
+    "type" : "source.lang.swift.syntaxtype.string"
+  },
+  {
+    "offset" : 9408,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 9415,
+    "length" : 5,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 9421,
+    "length" : 18,
+    "type" : "source.lang.swift.syntaxtype.string"
+  },
+  {
+    "offset" : 9441,
+    "length" : 8,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 9450,
+    "length" : 5,
+    "type" : "source.lang.swift.syntaxtype.string"
+  },
+  {
+    "offset" : 9466,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.comment"
+  },
+  {
+    "offset" : 9469,
+    "length" : 30,
+    "type" : "source.lang.swift.syntaxtype.comment"
+  },
+  {
+    "offset" : 9499,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.comment"
+  },
+  {
+    "offset" : 9503,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.attribute.builtin"
+  },
+  {
+    "offset" : 9510,
+    "length" : 9,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 9520,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 9533,
+    "length" : 382,
+    "type" : "source.lang.swift.syntaxtype.comment"
+  },
+  {
+    "offset" : 9920,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.attribute.builtin"
+  },
+  {
+    "offset" : 9927,
+    "length" : 8,
+    "type" : "source.lang.swift.syntaxtype.attribute.builtin"
+  },
+  {
+    "offset" : 9936,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 9941,
+    "length" : 9,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 9951,
+    "length" : 5,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 9957,
+    "length" : 12,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 9981,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 9988,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 9993,
+    "length" : 5,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 10011,
+    "length" : 160,
+    "type" : "source.lang.swift.syntaxtype.comment"
+  },
+  {
+    "offset" : 10176,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.attribute.builtin"
+  },
+  {
+    "offset" : 10183,
+    "length" : 8,
+    "type" : "source.lang.swift.syntaxtype.attribute.builtin"
+  },
+  {
+    "offset" : 10192,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 10197,
+    "length" : 8,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 10211,
+    "length" : 12,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 10235,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 10242,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 10249,
+    "length" : 3,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 10266,
+    "length" : 293,
+    "type" : "source.lang.swift.syntaxtype.comment"
+  },
+  {
+    "offset" : 10564,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.attribute.builtin"
+  },
+  {
+    "offset" : 10571,
+    "length" : 8,
+    "type" : "source.lang.swift.syntaxtype.attribute.builtin"
+  },
+  {
+    "offset" : 10580,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 10585,
+    "length" : 11,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 10597,
+    "length" : 5,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 10603,
+    "length" : 12,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 10617,
+    "length" : 7,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 10625,
+    "length" : 5,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 10631,
+    "length" : 19,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 10651,
+    "length" : 5,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 10668,
+    "length" : 12,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 10681,
+    "length" : 5,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 10690,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 10697,
+    "length" : 10,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 10711,
+    "length" : 5,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 10720,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 10727,
+    "length" : 8,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 10745,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 10752,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 10759,
+    "length" : 5,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 10766,
+    "length" : 7,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 10774,
+    "length" : 5,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 10792,
+    "length" : 268,
+    "type" : "source.lang.swift.syntaxtype.comment"
+  },
+  {
+    "offset" : 11065,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.attribute.builtin"
+  },
+  {
+    "offset" : 11072,
+    "length" : 8,
+    "type" : "source.lang.swift.syntaxtype.attribute.builtin"
+  },
+  {
+    "offset" : 11081,
+    "length" : 4,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 11086,
+    "length" : 18,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 11105,
+    "length" : 5,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 11111,
+    "length" : 19,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 11131,
+    "length" : 5,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 11141,
+    "length" : 12,
+    "type" : "source.lang.swift.syntaxtype.typeidentifier"
+  },
+  {
+    "offset" : 11164,
+    "length" : 12,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 11177,
+    "length" : 5,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 11186,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 11193,
+    "length" : 10,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 11207,
+    "length" : 5,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 11216,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 11223,
+    "length" : 8,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 11232,
+    "length" : 11,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 11255,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.keyword"
+  },
+  {
+    "offset" : 11262,
+    "length" : 6,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 11269,
+    "length" : 13,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  },
+  {
+    "offset" : 11283,
+    "length" : 5,
+    "type" : "source.lang.swift.syntaxtype.identifier"
+  }
+]
