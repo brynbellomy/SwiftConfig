@@ -19,9 +19,17 @@ class JSONConfigLayerTests: XCTestCase
     {
         super.setUp()
 
-        let json      = JSON(bundle:self.dynamicType, jsonFilename: "config-test")!
-        let jsonLayer = Config.JSONLayer(json: json)
-        config = Config(layer: jsonLayer)
+//        let json      = JSON(bundle:self.dynamicType, jsonFilename: "config-test")!
+//        let jsonLayer = Config.JSONLayer(json: json)
+        if let c = Config(yamlFilename:"config-test", bundle: self.dynamicType) {
+            config = c
+        }
+//        if let jsonLayer = Config.JSONLayer(yamlFilename:"config-test", bundle:self.dynamicType) {
+//            config = Config(layer: jsonLayer)
+//        }
+        else {
+            XCTAssert(false, "could not load test data")
+        }
     }
 
 

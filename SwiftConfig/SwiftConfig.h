@@ -2,7 +2,7 @@
 //  SwiftConfig.h
 //  SwiftConfig
 //
-//  Created by bryn austin bellomy on 2015 Jan 12.
+//  Created by bryn austin bellomy on 2015 Jan 31.
 //  Copyright (c) 2015 bryn austin bellomy. All rights reserved.
 //
 

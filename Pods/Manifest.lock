@@ -51,7 +51,7 @@ CHECKOUT OPTIONS:
     :commit: 31c843aa3104de8d180eca3e9a4e924621b03299
     :git: https://github.com/Quick/Nimble.git
   Quick:
-    :commit: 50493448a2a41166c9521348229efb73b036dd97
+    :commit: 0399166611d68f1dea5477b044e7bec29daaf241
     :git: https://github.com/Quick/Quick.git
   SwiftyJSON:
     :commit: 252838693668023571c46f56d7ea8347e6948d1b

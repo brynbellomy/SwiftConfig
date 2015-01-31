@@ -15,7 +15,7 @@ import Funky
 
 public func loadBundleData (bundleClass:AnyClass, filename:String, ext:String) -> Result<NSData>
 {
-    return (NSBundle.mainBundle().pathForResource(filename, ofType:ext)
+    return (NSBundle(forClass:bundleClass).pathForResource(filename, ofType:ext)
                         >>- { NSData(contentsOfFile:$0) }
                         >>- { success($0) })
         ?? failure("[SwiftConfig] could not find bundle file '\(filename)'")
@@ -24,7 +24,7 @@ public func loadBundleData (bundleClass:AnyClass, filename:String, ext:String) -
 
 public extension JSON
 {
-    public init?(bundle:AnyClass, jsonFilename:String)
+    public init?(jsonFilename:String, bundle:AnyClass)
     {
         switch loadBundleData(bundle, jsonFilename, ".json")
         {
@@ -37,7 +37,7 @@ public extension JSON
         }
     }
 
-    public init?(bundle:AnyClass, yamlFilename:String)
+    public init?(yamlFilename:String, bundle:AnyClass)
     {
         switch loadBundleData(bundle, yamlFilename, ".yaml")
         {
