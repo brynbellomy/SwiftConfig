@@ -1,0 +1,6 @@
+framework module YACYAML {
+  umbrella header "Pods-SwiftConfigTests-YACYAML-umbrella.h"
+
+  export *
+  module * { export * }
+}

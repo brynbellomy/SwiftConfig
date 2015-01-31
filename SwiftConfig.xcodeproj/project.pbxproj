@@ -11,6 +11,8 @@
 		6DC0DD91700878C175F67345 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 287F084F8D946BA51928B103 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		711B6593A1BB778BC5CCAFDC /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 287F084F8D946BA51928B103 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		C50A53F11A63A39600B0EF80 /* Config+BitmaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50A53F01A63A39600B0EF80 /* Config+BitmaskTests.swift */; };
+		C518D7E61A7CBAE20091A190 /* config-test.yaml in Resources */ = {isa = PBXBuildFile; fileRef = C518D7E51A7CBAE20091A190 /* config-test.yaml */; };
+		C518D7E91A7CBC510091A190 /* Config.Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = C518D7E71A7CBC480091A190 /* Config.Common.swift */; };
 		C573FE341A639ACE00273ED7 /* SwiftConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = C573FE331A639ACE00273ED7 /* SwiftConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C573FE3A1A639ACE00273ED7 /* SwiftConfig.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C573FE2E1A639ACE00273ED7 /* SwiftConfig.framework */; };
 		C582BBB31A639BAD00D479E5 /* config-test.json in Resources */ = {isa = PBXBuildFile; fileRef = C582BBAE1A639BAD00D479E5 /* config-test.json */; };
@@ -18,6 +20,7 @@
 		C582BBB51A639BAD00D479E5 /* JSONLayerConfigTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C582BBB01A639BAD00D479E5 /* JSONLayerConfigTests.swift */; };
 		C582BBB61A639BAD00D479E5 /* NSColorBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C582BBB11A639BAD00D479E5 /* NSColorBuilderTests.swift */; };
 		C582BBB71A639BAD00D479E5 /* SwiftConfigTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C582BBB21A639BAD00D479E5 /* SwiftConfigTests.swift */; };
+		C5958CDC1A7C9FE000E0D6BC /* Config.YAMLLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5958CDB1A7C9FE000E0D6BC /* Config.YAMLLayer.swift */; };
 		C5EC6A221A63A13A0055D6FA /* Config.DictionaryLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EC6A181A63A13A0055D6FA /* Config.DictionaryLayer.swift */; };
 		C5EC6A231A63A13A0055D6FA /* Config.JSONLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EC6A191A63A13A0055D6FA /* Config.JSONLayer.swift */; };
 		C5EC6A241A63A13A0055D6FA /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EC6A1A1A63A13A0055D6FA /* Config.swift */; };
@@ -45,6 +48,8 @@
 		6F35B39775D64B2A60F290EE /* Pods-SwiftConfigTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftConfigTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftConfigTests/Pods-SwiftConfigTests.debug.xcconfig"; sourceTree = "<group>"; };
 		83DBC9BA3282165D0404AE5B /* Pods_SwiftConfigTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftConfigTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C50A53F01A63A39600B0EF80 /* Config+BitmaskTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Config+BitmaskTests.swift"; sourceTree = "<group>"; };
+		C518D7E51A7CBAE20091A190 /* config-test.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "config-test.yaml"; sourceTree = "<group>"; };
+		C518D7E71A7CBC480091A190 /* Config.Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.Common.swift; sourceTree = "<group>"; };
 		C573FE2E1A639ACE00273ED7 /* SwiftConfig.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftConfig.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C573FE321A639ACE00273ED7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C573FE331A639ACE00273ED7 /* SwiftConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftConfig.h; sourceTree = "<group>"; };
@@ -55,6 +60,7 @@
 		C582BBB01A639BAD00D479E5 /* JSONLayerConfigTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONLayerConfigTests.swift; sourceTree = "<group>"; };
 		C582BBB11A639BAD00D479E5 /* NSColorBuilderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSColorBuilderTests.swift; sourceTree = "<group>"; };
 		C582BBB21A639BAD00D479E5 /* SwiftConfigTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftConfigTests.swift; sourceTree = "<group>"; };
+		C5958CDB1A7C9FE000E0D6BC /* Config.YAMLLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.YAMLLayer.swift; sourceTree = "<group>"; };
 		C5EC6A181A63A13A0055D6FA /* Config.DictionaryLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.DictionaryLayer.swift; sourceTree = "<group>"; };
 		C5EC6A191A63A13A0055D6FA /* Config.JSONLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.JSONLayer.swift; sourceTree = "<group>"; };
 		C5EC6A1A1A63A13A0055D6FA /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
@@ -158,6 +164,7 @@
 				C582BBB11A639BAD00D479E5 /* NSColorBuilderTests.swift */,
 				C582BBAE1A639BAD00D479E5 /* config-test.json */,
 				C573FE3E1A639ACE00273ED7 /* Supporting Files */,
+				C518D7E51A7CBAE20091A190 /* config-test.yaml */,
 			);
 			path = SwiftConfigTests;
 			sourceTree = "<group>";
@@ -177,6 +184,7 @@
 				C5EC6A1E1A63A13A0055D6FA /* Protocols */,
 				C5EC6A1B1A63A13A0055D6FA /* Extensions */,
 				C5EC6A1A1A63A13A0055D6FA /* Config.swift */,
+				C518D7E71A7CBC480091A190 /* Config.Common.swift */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -186,6 +194,7 @@
 			children = (
 				C5EC6A181A63A13A0055D6FA /* Config.DictionaryLayer.swift */,
 				C5EC6A191A63A13A0055D6FA /* Config.JSONLayer.swift */,
+				C5958CDB1A7C9FE000E0D6BC /* Config.YAMLLayer.swift */,
 			);
 			path = "Config layers";
 			sourceTree = "<group>";
@@ -313,6 +322,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C518D7E61A7CBAE20091A190 /* config-test.yaml in Resources */,
 				C582BBB31A639BAD00D479E5 /* config-test.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,12 +430,14 @@
 				C5EC6A2B1A63A2CD0055D6FA /* Bitmask+Config.swift in Sources */,
 				C5EC6A291A63A13A0055D6FA /* IConfigRepresentable.swift in Sources */,
 				C5EC6A261A63A13A0055D6FA /* Color+Config.swift in Sources */,
+				C518D7E91A7CBC510091A190 /* Config.Common.swift in Sources */,
 				C5EC6A281A63A13A0055D6FA /* IConfigLayer.swift in Sources */,
 				C5EC6A271A63A13A0055D6FA /* IConfigInitable.swift in Sources */,
 				C5EC6A231A63A13A0055D6FA /* Config.JSONLayer.swift in Sources */,
 				C5EC6A251A63A13A0055D6FA /* CGGeometry+Config.swift in Sources */,
 				C5EC6A221A63A13A0055D6FA /* Config.DictionaryLayer.swift in Sources */,
 				C5EC6A241A63A13A0055D6FA /* Config.swift in Sources */,
+				C5958CDC1A7C9FE000E0D6BC /* Config.YAMLLayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -571,7 +583,7 @@
 		};
 		C573FE481A639ACE00273ED7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D240E45FD4933AD2E3BA8D3A /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 6F35B39775D64B2A60F290EE /* Pods-SwiftConfigTests.debug.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -590,7 +602,7 @@
 		};
 		C573FE491A639ACE00273ED7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0A6FE079201133C2DB3D25B7 /* Pods.release.xcconfig */;
+			baseConfigurationReference = FF425CAEB1CBFBCAF958D443 /* Pods-SwiftConfigTests.release.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (

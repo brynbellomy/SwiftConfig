@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.source_files = 'src/*.swift', 'src/**/*.swift'
   s.requires_arc = true
 
-  s.dependency 'Funky'
+  s.dependency 'Funky', '0.1.2'
   s.dependency 'SwiftDataStructures'
   s.dependency 'SwiftBitmask'
 

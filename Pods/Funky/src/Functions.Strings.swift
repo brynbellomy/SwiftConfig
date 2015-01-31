@@ -137,18 +137,16 @@ public func dirname(path:String) -> String {
 
     :param: hex The hex color string from which to create the color object.  '#' sign is optional.
  */
-public func rgbaFromHexCode(hexCode:String) -> (r:UInt32, g:UInt32, b:UInt32, a:UInt32)?
+public func rgbaFromHexCode(hex:String) -> (r:UInt32, g:UInt32, b:UInt32, a:UInt32)?
 {
-    var sanitizedStr = NSMutableString(string:hexCode)
-    sanitizedStr["[^a-fA-F0-9]"] ~= ""
-    let sanitized = String(sanitizedStr)
-    let strLen = countElements(sanitized)
+    let trimmed = hex["[^a-fA-F0-9]"] ~= "" |> stringify
+    let strLen  = countElements(trimmed)
 
     if strLen != 6 && strLen != 8 {
         return nil
     }
 
-    let groups = String(sanitized)["([:xdigit:][:xdigit:])"].matches()
+    let groups = String(trimmed)["([:xdigit:][:xdigit:])"].matches()
     if groups.count < 3 {
         return nil
     }
@@ -197,8 +195,7 @@ public func trim(str:String) -> String {
 
 public func rgbaFromRGBAString(string:String) -> (r:CGFloat, g:CGFloat, b:CGFloat, a:CGFloat)?
 {
-    var sanitized = NSMutableString(string:string)
-    sanitized["[^0-9,\\.]"] ~= ""
+    let sanitized = string["[^0-9,\\.]"] ~= ""
     let parts: [String] = String(sanitized) |> splitOn(",") |> map‡ (trim)
     if parts.count != 4 {
         return nil

@@ -9,32 +9,50 @@
 import Foundation
 import SwiftyJSON
 import Funky
+import LlamaKit
 
 
 public extension Config
 {
-    public init?(jsonBundleFilename:String)
+    public init?(bundle:AnyClass, yamlFilename:String)
     {
-        if let layer = JSONLayer(bundleFilename: jsonBundleFilename)? {
+        if let layer = JSONLayer(bundle:bundle, yamlFilename:yamlFilename) {
             self = Config(layer:layer)
         }
-        else {
-            return nil
+        else { return nil }
+    }
+
+    public init?(bundle:AnyClass, jsonFilename:String)
+    {
+        if let layer = JSONLayer(bundle:bundle, jsonFilename:jsonFilename) {
+            self = Config(layer:layer)
         }
+        else { return nil }
     }
 
     public struct JSONLayer
     {
-        private let json : JSON = JSON.nullJSON
+        private let json :JSON = JSON.nullJSON
 
-        public init?(bundleFilename:String)
+        public init?(bundle:AnyClass, yamlFilename:String)
         {
-            if let loadedJson = JSON(bundleFilename:bundleFilename)? {
-                json = loadedJson
+            if let j = JSON(bundle:bundle, yamlFilename:yamlFilename) {
+                json = j
             }
-            else { return nil }
+            else {
+                return nil
+            }
         }
 
+        public init?(bundle:AnyClass, jsonFilename:String)
+        {
+            if let j = JSON(bundle:bundle, jsonFilename:jsonFilename) {
+                json = j
+            }
+            else {
+                return nil
+            }
+        }
 
         public init(json j:JSON) {
             json = j
@@ -43,9 +61,9 @@ public extension Config
 }
 
 
-extension Config.JSONLayer : IConfigLayer
+extension Config.JSONLayer: IConfigLayer
 {
-    public var allConfigKeys : [String] { return Array(json.dictionaryValue.keys) }
+    public var allConfigKeys: [String] { return Array(json.dictionaryValue.keys) }
 
     public func hasConfigValueForKey(key:String) -> Bool
     {
@@ -99,27 +117,6 @@ extension Config.JSONLayer : Printable, DebugPrintable {
     }
 
     public var debugDescription : String { return description }
-}
-
-
-
-private extension JSON
-{
-    private init?(var bundleFilename:String)
-    {
-        if bundleFilename.hasSuffix(".json") {
-            bundleFilename = bundleFilename.stringByDeletingPathExtension
-        }
-
-        if let filepath = NSBundle.mainBundle().pathForResource(bundleFilename, ofType:"json")? {
-            let jsonData = NSData(contentsOfFile:filepath)
-            self = JSON(data:jsonData!)
-        }
-        else {
-            NSLog("[SwiftConfig] could not find bundle file '\(bundleFilename)'")
-            return nil
-        }
-    }
 }
 
 

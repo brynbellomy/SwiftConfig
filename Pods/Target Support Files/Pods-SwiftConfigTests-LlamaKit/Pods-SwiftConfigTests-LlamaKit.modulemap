@@ -1,0 +1,6 @@
+framework module LlamaKit {
+  umbrella header "Pods-SwiftConfigTests-LlamaKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -27,30 +27,6 @@ enum AlienType: String, IConfigRepresentable
 }
 
 
-private func pathForFilename(filename:String, inBundle bundleClass:AnyClass) -> String?
-{
-    let bundle = NSBundle(forClass: bundleClass)
-    let path = bundle.pathForResource(filename.stringByDeletingPathExtension, ofType:filename.pathExtension)
-    return path
-}
-
-
-public extension JSON
-{
-    public init?(testBundle:AnyClass, filename:String)
-    {
-        if let filepath = pathForFilename(filename, inBundle:testBundle)?
-        {
-            let jsonData = NSData(contentsOfFile:filepath)
-            self = JSON(data:jsonData!)
-        }
-        else {
-            println("[SwiftConfig] could not find test bundle file '\(filename)'")
-            return nil
-        }
-    }
-}
-
 
 
 
