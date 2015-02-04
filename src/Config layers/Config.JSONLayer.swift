@@ -14,7 +14,7 @@ import LlamaKit
 
 public extension Config
 {
-    public init?(yamlFilename:String, bundle:AnyClass)
+    public init?(yamlFilename:String, bundle:NSBundle)
     {
         if let layer = JSONLayer(yamlFilename:yamlFilename, bundle:bundle) {
             self = Config(layer:layer)
@@ -22,7 +22,7 @@ public extension Config
         else { return nil }
     }
 
-    public init?(jsonFilename:String, bundle:AnyClass)
+    public init?(jsonFilename:String, bundle:NSBundle)
     {
         if let layer = JSONLayer(jsonFilename:jsonFilename, bundle:bundle) {
             self = Config(layer:layer)
@@ -34,7 +34,7 @@ public extension Config
     {
         private let json :JSON = JSON.nullJSON
 
-        public init?(yamlFilename:String, bundle:AnyClass)
+        public init?(yamlFilename:String, bundle:NSBundle)
         {
             if let j = JSON(yamlFilename:yamlFilename, bundle:bundle) {
                 json = j
@@ -44,7 +44,7 @@ public extension Config
             }
         }
 
-        public init?(jsonFilename:String, bundle:AnyClass)
+        public init?(jsonFilename:String, bundle:NSBundle)
         {
             if let j = JSON(jsonFilename:jsonFilename, bundle:bundle) {
                 json = j

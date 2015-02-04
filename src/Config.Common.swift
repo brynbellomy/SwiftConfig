@@ -13,9 +13,9 @@ import LlamaKit
 import Funky
 
 
-public func loadBundleData (bundleClass:AnyClass, filename:String, ext:String) -> Result<NSData>
+public func loadBundleData (bundle:NSBundle, filename:String, ext:String) -> Result<NSData>
 {
-    return (NSBundle(forClass:bundleClass).pathForResource(filename, ofType:ext)
+    return (bundle.pathForResource(filename, ofType:ext)
                         >>- { NSData(contentsOfFile:$0) }
                         >>- { success($0) })
         ?? failure("[SwiftConfig] could not find bundle file '\(filename)'")
@@ -24,7 +24,7 @@ public func loadBundleData (bundleClass:AnyClass, filename:String, ext:String) -
 
 public extension JSON
 {
-    public init?(jsonFilename:String, bundle:AnyClass)
+    public init?(jsonFilename:String, bundle:NSBundle)
     {
         switch loadBundleData(bundle, jsonFilename, ".json")
         {
@@ -37,7 +37,7 @@ public extension JSON
         }
     }
 
-    public init?(yamlFilename:String, bundle:AnyClass)
+    public init?(yamlFilename:String, bundle:NSBundle)
     {
         switch loadBundleData(bundle, yamlFilename, ".yaml")
         {
