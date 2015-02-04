@@ -57,7 +57,7 @@ extension Config.DictionaryLayer : IConfigLayer
 
     public func configLayerWithKeys(keys:[String]) -> Config.DictionaryLayer
     {
-        let newDict: DictionaryType = dict |> select { contains(keys, $0.0) }
+        let newDict: DictionaryType = dict |> selectWhere { contains(keys, $0.0) }
 
         return Config.DictionaryLayer(dictionary:newDict)
     }
