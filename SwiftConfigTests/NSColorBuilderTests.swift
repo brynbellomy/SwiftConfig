@@ -20,7 +20,7 @@ class NSColorBuilderTests : XCTestCase
     {
         super.setUp()
 
-        let json      = JSON(jsonFilename: "config-test", bundle:self.dynamicType)!
+        let json      = JSON(jsonFilename: "config-test", bundle: NSBundle(forClass: self.dynamicType))!
         let jsonLayer = Config.JSONLayer(json: json)
         config = Config(layer: jsonLayer)
     }

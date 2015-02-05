@@ -22,6 +22,7 @@ public struct Config
 	public typealias Index = String
     public typealias Element = AnyObject
 
+    public var isEmpty: Bool { return allConfigKeys.count <= 0 }
     public private(set) var layers    = UnderlyingStackType()
     public private(set) var overrides = Config.DictionaryLayer()
 
@@ -48,7 +49,7 @@ public struct Config
 
     // MARK: Getter: single value
     public func get <T: IConfigRepresentable> (key:String) -> T? {
-        return initializeRepresentedObject(key:key)
+        return initializeRepresentable(key:key)
     }
 
 
@@ -63,36 +64,36 @@ public struct Config
 
     // MARK: Getter: tuples
     public func get <T: IConfigRepresentable, U: IConfigRepresentable> (keys one:String, _ two:String) -> (T?, U?) {
-        return (initializeRepresentedObject(key:one), initializeRepresentedObject(key:two))
+        return (initializeRepresentable(key:one), initializeRepresentable(key:two))
     }
 
 
     public func get <T: IConfigRepresentable, U: IConfigRepresentable, V: IConfigRepresentable>
         (keys one:String, _ two:String, _ three:String) -> (T?, U?, V?)
     {
-        return (initializeRepresentedObject(key:one), initializeRepresentedObject(key:two), initializeRepresentedObject(key:three))
+        return (initializeRepresentable(key:one), initializeRepresentable(key:two), initializeRepresentable(key:three))
     }
 
 
     public func get <T: IConfigRepresentable, U: IConfigRepresentable, V: IConfigRepresentable, W: IConfigRepresentable>
         (keys one:String, _ two:String, _ three:String, _ four:String) -> (T?, U?, V?, W?)
     {
-            return (initializeRepresentedObject(key:one),
-                    initializeRepresentedObject(key:two),
-                    initializeRepresentedObject(key:three),
-                    initializeRepresentedObject(key:four))
+            return (initializeRepresentable(key:one),
+                    initializeRepresentable(key:two),
+                    initializeRepresentable(key:three),
+                    initializeRepresentable(key:four))
     }
 
 
     // MARK: Getter: value as array
     public func get <T: IConfigRepresentable> (key:String) -> [T]? {
-        return initializeRepresentedObjectArray(key: key) { T.fromConfigValue($0) }
+        return initializeRepresentables(key: key)
     }
 
 
     // MARK: Getter: array of values for multiple keys
     public func get <T: IConfigRepresentable> (#keys:String...) -> [T?] {
-        return keys |> mapFilter { self.initializeRepresentedObject(key:$0) }
+        return keys |> mapFilter { self.initializeRepresentable(key:$0) }
     }
 
 
@@ -149,6 +150,18 @@ public struct Config
         return T(config:config)
     }
 
+    // MARK: Getter: IConfigBuildable object from subconfig at key
+    public func get <T: IConfigBuildable> (key:String) -> Result<T>
+    {
+        let config = get(key) as Config
+        return T.build(config:config)
+    }
+
+    // MARK: Getter: IConfigBuildable object from subconfig at key
+    public func get <K: IConfigRepresentable, V: IConfigBuildable> (key:String) -> [K: Result<V>]? {
+        return initializeBuildableDictionary(key: key)
+    }
+
 
     // MARK: Getter: object built by an IConfigurableBuilder
     public func get <B: IConfigurableBuilder> (key:String, var builder: B) -> Result<B.BuiltType>
@@ -160,6 +173,20 @@ public struct Config
         let config = get(key) as Config
         builder.configure(config)
         return builder.build()
+    }
+
+
+    // MARK: Getter: array of subconfigs
+    public func get (key:String) -> [Config]?
+    {
+        if let value: AnyObject = get(key)? {
+            if let nsarray = value as? NSArray {
+                if let arrayOfNSDict = nsarray as? [[String: AnyObject]] {
+                     return arrayOfNSDict |> map‡ { Config(dictionary: $0) }
+                }
+            }
+        }
+        return nil
     }
 
 
@@ -220,48 +247,75 @@ public struct Config
     // MARK: - Private helper methods
     //
 
-    private func representedObjectInitializer <T: IConfigRepresentable>
-        (constructObject:(T.ConfigValueType) -> (T?)) -> (AnyObject) -> T? //(rawValue:AnyObject) -> T?
+    /**
+        Initializes an `IConfigRepresentable` object from a config value.  `T.fromConfigValue()` is called
+        with the value found at the given key.  If the key was not found, this method returns `nil`.
+     */
+    private func initializeRepresentable
+        <T: IConfigRepresentable>
+        (#key:String) -> T?
     {
-        return { rawValue in
-            if let configValue = rawValue as? T.ConfigValueType {
-                return constructObject(configValue)
-            }
-            return nil
-        }
-    }
-
-
-    private func initializeRepresentedObject <T: IConfigRepresentable> (#key:String, construct:(T.ConfigValueType) -> (T?)) -> T?
-    {
-        if let layer = findLayerWithValueForKey(key)
-        {
-            if let configValue: AnyObject = layer.configValueForKey(key)
-            {
-                let initializer = representedObjectInitializer(construct)
-                return initializer(configValue)
-            }
+        if let configValue = findLayerWithValueForKey(key)?.configValueForKey(key) as? T.ConfigValueType {
+            return T.fromConfigValue(configValue)
         }
         return nil
     }
 
 
-    private func initializeRepresentedObject<T: IConfigRepresentable> (#key:String) -> T? {
-        return initializeRepresentedObject(key:key) { T.fromConfigValue($0) }
-    }
-
-
-    private func initializeRepresentedObjectArray<T: IConfigRepresentable> (#key:String, constructor:(T.ConfigValueType) -> T?) -> [T]?
+    /**
+        Initializes an array of `IConfigRepresentable` objects.
+     */
+    private func initializeRepresentables <T: IConfigRepresentable> (#key:String) -> [T]?
     {
         if let anyConfigValue: AnyObject = findLayerWithValueForKey(key)?.configValueForKey(key)
         {
             let configValueNSArray = (anyConfigValue as? NSArray)!
-            return (configValueNSArray as [AnyObject]) |> mapFilter(representedObjectInitializer(constructor))
+            return (configValueNSArray as [AnyObject])
+                            |> mapFilter { object in
+                                    if let configValue = object as? T.ConfigValueType {
+                                        return T.fromConfigValue(configValue)
+                                    }
+                                    return nil
+                                }
         }
         return nil
     }
 
 
+    /**
+        Initializes a dictionary of string keys and `IConfigBuildable` objects from a dictionary-ish
+        config value.  The returned dictionary's values are the unwrapped `Result` objects returned by
+        `IConfigBuildable.build(config:)`.  If `key` was not found, the `key`'s `value` was not
+        dictionary-ish (or was empty), or one or more of the `IConfigBuildable`s failed to build, this
+        method returns `.Failure`.
+     */
+    private func initializeBuildableDictionary
+        <K: IConfigRepresentable, V: IConfigBuildable> (#key:String) -> Result<[K: V]>
+    {
+        let dictConfig = get(key) as Config
+        if dictConfig.isEmpty {
+            return failure("Value for key '\(key)' was not found, was not dictionary-ish, or was empty.")
+        }
+
+        return dictConfig.allConfigKeys
+                    |> map‡ { childName in
+                        var childConfig = dictConfig.get(childName) as Config
+                        if childConfig.isEmpty {
+                            return (childName, failure("Could not initialize the value of key '\(childName)' as a Config object."))
+                        }
+
+                        childConfig.set("__key", value:childName)
+
+                        let maybeObject = T.build(config: childConfig)
+                        return (childName, maybeObject)
+                    }
+                    |> mapToDictionary(id)
+    }
+
+
+    /**
+        Finds the topmost layer containing `key` and returns it.  If no layers contained the key, this method returns `nil`.
+     */
     public func findLayerWithValueForKey(key:String) -> IConfigLayer?
     {
         if overrides.hasConfigValueForKey(key) {

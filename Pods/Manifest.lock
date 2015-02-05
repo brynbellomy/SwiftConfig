@@ -48,10 +48,10 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   Nimble:
-    :commit: 31c843aa3104de8d180eca3e9a4e924621b03299
+    :commit: 9538a301d5320fd607f01c931dc282868b0e827a
     :git: https://github.com/Quick/Nimble.git
   Quick:
-    :commit: 0399166611d68f1dea5477b044e7bec29daaf241
+    :commit: 3de9d4a178ec8ac3ad8ef7a70fcd2828260ba64f
     :git: https://github.com/Quick/Quick.git
   SwiftyJSON:
     :commit: 252838693668023571c46f56d7ea8347e6948d1b
@@ -63,7 +63,7 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   Funky: 6601f34be877a030af2b998f04710efb15848066
   LibYAML: d447960375d9114187bfddba6e6c24d69bff11f8
-  LlamaKit: 430d2ae678888d13fe87f8a01d0c4fb69c06eb93
+  LlamaKit: 25f47a933b6580a6fc159d95adb2e2953c7012e9
   Nimble: 55fef248ef3703024ce431db817160ad24d89ba3
   Quick: 1bda8b4c8d43f6b4dd69ca001918b1767b3c9c93
   Respect: 435b3053397ee26aad27e39ef07ff8305a21d22c

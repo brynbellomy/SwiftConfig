@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.dependency 'SwiftDataStructures'
   s.dependency 'SwiftBitmask'
 
-  s.dependency 'LlamaKit'
+  s.dependency 'LlamaKit', '0.1.1'
   s.dependency 'SwiftyJSON'
 
   s.source = { :git => 'https://github.com/brynbellomy/SwiftConfig.git', :tag => s.version }

@@ -21,7 +21,7 @@ class JSONConfigLayerTests: XCTestCase
 
 //        let json      = JSON(bundle:self.dynamicType, jsonFilename: "config-test")!
 //        let jsonLayer = Config.JSONLayer(json: json)
-        if let c = Config(yamlFilename:"config-test", bundle: self.dynamicType) {
+        if let c = Config(yamlFilename:"config-test", bundle: NSBundle(forClass: self.dynamicType)) {
             config = c
         }
 //        if let jsonLayer = Config.JSONLayer(yamlFilename:"config-test", bundle:self.dynamicType) {
@@ -106,4 +106,21 @@ class JSONConfigLayerTests: XCTestCase
         let double = subconfig!.get("double") as Double?
         XCTAssertEqualWithAccuracy(double!, 23.8, 0.00001)
     }
+
+    // @@TODO: finish this test and add it to dictionary layer tests
+    func testGetArrayOfSubconfigs() {
+        let subconfigs: [Config]? = config.get("array of subconfigs")
+        XCTAssert(subconfigs != nil)
+        XCTAssert(subconfigs?.count == 3)
+
+        let one = subconfigs![0]
+        XCTAssertEqual(one.allConfigKeys.count, 2)
+        let oneName: String? = one.get("name")
+        XCTAssert(oneName == "first")
+    }
 }
+
+
+
+
+

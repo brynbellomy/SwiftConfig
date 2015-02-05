@@ -30,3 +30,10 @@
       key2:
         string: "bryn"
         double: 23.8
+  array of subconfigs:
+    - name: first
+      age: 10
+    - name: second
+      age: 20
+    - name: third
+      age: 30
