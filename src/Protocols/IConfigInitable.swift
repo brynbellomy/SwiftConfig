@@ -15,6 +15,10 @@ public protocol IConfigInitable {
     init?(config:Config)
 }
 
+public protocol IConfigBuildable {
+    class func build(#config: Config) -> Result<Self>
+}
+
 
 public protocol IConfigurableBuilder
 {
