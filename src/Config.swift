@@ -157,8 +157,18 @@ public struct Config
         return T.build(config:config)
     }
 
-    // MARK: Getter: IConfigBuildable object from subconfig at key
-    public func get <K: IConfigRepresentable, V: IConfigBuildable> (key:String) -> [K: Result<V>]? {
+
+    // MARK: Getter: IConfigBuildable objects from array of subconfigs at key
+    public func get <T: IConfigBuildable> (key:String) -> Result<[T]> {
+        return initializeBuildables(key: key)
+    }
+
+
+    // MARK: Getter: @@TODO describe
+    public func get
+        <K: IConfigRepresentable, V: IConfigBuildable where K: Hashable, K.ConfigValueType == String>
+        (key:String) -> Result<[K: V]>
+    {
         return initializeBuildableDictionary(key: key)
     }
 
@@ -179,34 +189,34 @@ public struct Config
     // MARK: Getter: array of subconfigs
     public func get (key:String) -> [Config]?
     {
-        if let value: AnyObject = get(key)? {
-            if let nsarray = value as? NSArray {
-                if let arrayOfNSDict = nsarray as? [[String: AnyObject]] {
-                     return arrayOfNSDict |> map‡ { Config(dictionary: $0) }
-                }
-            }
+        if let arrayOfDicts = (get(key) as AnyObject?) as? [[String: AnyObject]] { // jesus, swift {
+             return arrayOfDicts |> map‡ { Config(dictionary: $0) }
         }
         return nil
     }
 
 
     // MARK: build an IConfigurableBuilder's product using all of the entries in this config
+
     public func buildWith <B: IConfigurableBuilder> (var builder:B) -> Result<B.BuiltType> {
         builder.configure(self)
         return builder.build()
     }
 
 
-    // MARK: Pluck (narrows all layers)
-    public func pluck(keys:String...) -> Config {
+    // MARK: Pluck (narrows all layers to given keys)
+
+    public func pluck (keys:String...) -> Config {
         return pluck(keys)
     }
 
-    public func pluck<T: IConfigInitable> (keys:String...) -> T? {
+
+    public func pluck <T: IConfigInitable> (keys:String...) -> T? {
         return pluck(keys)
     }
 
-    public func pluck(keys:[String]) -> Config
+
+    public func pluck (keys:[String]) -> Config
     {
         let pluckedLayers = map(layers) { $0.configLayerWithKeys(keys) }
         var config = Config(pluckedLayers)
@@ -215,12 +225,20 @@ public struct Config
     }
 
 
-    public func pluck<T: IConfigInitable> (keys:[String]) -> T? {
+    public func pluck <T: IConfigInitable> (keys:[String]) -> T? {
         let config = pluck(keys) as Config
         return T(config: config)
     }
 
 
+    /**
+        Creates a `Dictionary` from all of the keys available in all layers of the `Config` object.
+
+        Each key is paired with the value from the topmost layer that has that key.  The dictionary
+        returns the same values for each key as one would get from the `Config`'s `get(key:) -> AnyObject?`
+        method.  If you don't need the underlying layers of a `Config` once it has been assembled, this can
+        be a performance gain, as accessing a native Swift `Dictionary` is likely to be faster than `Config.get`.
+     */
     public func flatten() -> [String: AnyObject]
     {
         func keyToKeyValueTuple(key:String) -> (String, AnyObject)? {
@@ -234,6 +252,12 @@ public struct Config
     }
 
 
+    /**
+        Adds the given `key` and `value` to the `overrides` layer, which is always preferred to other
+        layers.  This can be useful in a multi-stage initialization process if some initialized object
+        must be passed to a subsequent initializer through a `Config` object (see `IConfigInitable`,
+        `IConfigRepresentable`, `IConfigurableBuilder`, et. al).
+    */
     public mutating func set(key:String, value:AnyObject?) {
         overrides.setValueForConfigKey(key, value)
     }
@@ -281,6 +305,27 @@ public struct Config
         return nil
     }
 
+    /**
+        Initializes an array of `IConfigBuildable` objects.
+     */
+    private func initializeBuildables <T: IConfigBuildable> (#key:String) -> Result<[T]>
+    {
+        if let anyConfigValue: AnyObject = findLayerWithValueForKey(key)?.configValueForKey(key)
+        {
+            let nsarray = (anyConfigValue as? NSArray)!
+            return (nsarray as [NSDictionary])
+                            |> mapFilter { nsdict in
+                                    if let dict = nsdict as? [String: AnyObject] {
+                                        let subconfig = Config(dictionary:dict)
+                                        return T.build(config: subconfig)
+                                    }
+                                    return failure("Could not get config value as a String-keyed dictionary.")
+                                }
+                            |> coalesce
+        }
+        return failure("Could not find key \(key).")
+    }
+
 
     /**
         Initializes a dictionary of string keys and `IConfigBuildable` objects from a dictionary-ish
@@ -290,7 +335,7 @@ public struct Config
         method returns `.Failure`.
      */
     private func initializeBuildableDictionary
-        <K: IConfigRepresentable, V: IConfigBuildable> (#key:String) -> Result<[K: V]>
+        <K: IConfigRepresentable, V: IConfigBuildable where K.ConfigValueType == String> (#key:String) -> Result<[K: V]>
     {
         let dictConfig = get(key) as Config
         if dictConfig.isEmpty {
@@ -298,18 +343,23 @@ public struct Config
         }
 
         return dictConfig.allConfigKeys
-                    |> map‡ { childName in
+                    |> map‡ { (childName:String) in
+                        let keyObject = K.fromConfigValue(childName) ?± failure("Could not initialize IConfigRepresentable config key.")
+
                         var childConfig = dictConfig.get(childName) as Config
                         if childConfig.isEmpty {
-                            return (childName, failure("Could not initialize the value of key '\(childName)' as a Config object."))
+                            return (keyObject, failure("Could not initialize the value of key '\(childName)' as a Config object."))
                         }
 
                         childConfig.set("__key", value:childName)
 
-                        let maybeObject = T.build(config: childConfig)
-                        return (childName, maybeObject)
+                        let maybeObject = V.build(config: childConfig)
+                        return (keyObject, maybeObject)
                     }
-                    |> mapToDictionary(id)
+                    |> coalesce2
+                    |> { maybeTuples in maybeTuples.map(mapToDictionary(id)) }
+
+
     }
 
 
