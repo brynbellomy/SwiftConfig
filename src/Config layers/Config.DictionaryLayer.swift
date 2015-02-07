@@ -36,9 +36,9 @@ extension Config
 }
 
 
-extension Config.DictionaryLayer : IConfigLayer
+extension Config.DictionaryLayer: IConfigLayer
 {
-    public var allConfigKeys : [String] { return Array(dict.keys) }
+    public var allConfigKeys: [String] { return Array(dict.keys) }
 
     public func hasConfigValueForKey(key:String) -> Bool {
         return dict.indexForKey(key) != nil
@@ -64,7 +64,7 @@ extension Config.DictionaryLayer : IConfigLayer
 }
 
 
-extension Config.DictionaryLayer : IMutableConfigLayer
+extension Config.DictionaryLayer: IMutableConfigLayer
 {
     public mutating func setValueForConfigKey(key:String, _ value:AnyObject?) {
         dict[key] = value
@@ -76,7 +76,7 @@ extension Config.DictionaryLayer : IMutableConfigLayer
 }
 
 
-extension Config.DictionaryLayer : Printable, DebugPrintable
+extension Config.DictionaryLayer: Printable, DebugPrintable
 {
     public var description      : String {
         let str = dumpString(dict)

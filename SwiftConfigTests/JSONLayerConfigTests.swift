@@ -10,6 +10,7 @@ import Cocoa
 import XCTest
 import SwiftConfig
 import SwiftyJSON
+import LlamaKit
 
 class JSONConfigLayerTests: XCTestCase
 {
@@ -88,6 +89,16 @@ class JSONConfigLayerTests: XCTestCase
         XCTAssert(contains(alienTypeMultipleValues!, .TallWhite))
     }
 
+    func testAllConfigKeys() {
+        config.set("new key", value: "xyzzy")
+        let allKeys = Array(DictionaryConfigLayerTests.dict.keys) + ["new key"] // ["some string", "some float", "true bool", "false bool", "float1", "float2", "float3", "size", "string array", "alien type (single)", "alien type (multiple)", "new key"]
+        let containsAllKeys = reduce(allKeys, true) { containsAll, key in
+            return containsAll && contains(self.config.allConfigKeys, key)
+        }
+        XCTAssertTrue(containsAllKeys)
+        XCTAssertEqual(config.allConfigKeys.count, allKeys.count)
+    }
+
     func testNonexistentKey() {
         let val: AnyObject? = config.get("totally bogus")
         XCTAssertNil(val)
@@ -115,8 +126,34 @@ class JSONConfigLayerTests: XCTestCase
 
         let one = subconfigs![0]
         XCTAssertEqual(one.allConfigKeys.count, 2)
+
         let oneName: String? = one.get("name")
         XCTAssert(oneName == "first")
+    }
+
+    func testIConfigBuildable()
+    {
+        let config = Config(yamlFilename:"time-machine", bundle:NSBundle(forClass:JSONConfigLayerTests.self))!
+        let maybeTm = TimeMachine.build(config:config)
+        XCTAssertTrue(maybeTm.isSuccess())
+
+        let tm: TimeMachine = maybeTm.value()!
+        XCTAssert(tm.direction == .Forward)
+        XCTAssert(tm.yearCreated == 2355)
+        XCTAssert(tm.originPlanet == "New Caprica")
+    }
+
+    func test_BuilderOf_IConfigBuildable()
+    {
+        let config = Config(yamlFilename:"time-machine", bundle:NSBundle(forClass:JSONConfigLayerTests.self))!
+        let builder = BuilderOf<TimeMachine>(config:config)
+        let maybeTm: Result<TimeMachine> = builder.build()
+        XCTAssertTrue(maybeTm.isSuccess())
+
+        let tm: TimeMachine = maybeTm.value()!
+        XCTAssert(tm.direction == .Forward)
+        XCTAssert(tm.yearCreated == 2355)
+        XCTAssert(tm.originPlanet == "New Caprica")
     }
 }
 

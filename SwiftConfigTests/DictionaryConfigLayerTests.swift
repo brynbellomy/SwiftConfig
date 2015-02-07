@@ -15,11 +15,8 @@ class DictionaryConfigLayerTests: XCTestCase
 {
     var config = Config()
 
-    override func setUp()
-    {
-        super.setUp()
-
-        let dict: [String: NSObject] = [
+    class var dict: [String: NSObject] {
+        return [
             "some string": "bryn",
             "some float": 42.7,
             "true bool": true,
@@ -34,9 +31,32 @@ class DictionaryConfigLayerTests: XCTestCase
             "string array": ["bryn", "austin", "bellomy"],
             "alien type (single)": "hybrid",
             "alien type (multiple)": ["grey", "tall white"],
+            "color object": [ "r": 0.3, "g": 0.4, "b": 0.12, "a": 1, ],
+            "color hex rgb string": "#1af7e3",
+            "color hex rgba string": "#1af7e3f1",
+            "color rgba string": "rgba(0.1, 0.9, 0.2, 0.9)",
+            "nested object": [
+                "key1": [
+                    "key2": [
+                        "string": "bryn",
+                        "double": 23.8,
+                    ],
+                ],
+            ],
+            "array of subconfigs": [
+                [ "name": "first", "age": 10 ],
+                [ "name": "second", "age": 20 ],
+                [ "name": "third", "age": 30 ],
+            ],
         ]
+    }
 
-        let dictionaryLayer = Config.DictionaryLayer(dictionary: dict)
+
+    override func setUp()
+    {
+        super.setUp()
+
+        let dictionaryLayer = Config.DictionaryLayer(dictionary: DictionaryConfigLayerTests.dict)
         config = Config(layer: dictionaryLayer)
     }
 
@@ -107,7 +127,7 @@ class DictionaryConfigLayerTests: XCTestCase
 
     func testAllConfigKeys() {
         config.set("new key", value: "xyzzy")
-        let allKeys = ["some string", "some float", "true bool", "false bool", "float1", "float2", "float3", "size", "string array", "alien type (single)", "alien type (multiple)", "new key"]
+        let allKeys = Array(DictionaryConfigLayerTests.dict.keys) + ["new key"] // ["some string", "some float", "true bool", "false bool", "float1", "float2", "float3", "size", "string array", "alien type (single)", "alien type (multiple)", "new key"]
         let containsAllKeys = reduce(allKeys, true) { containsAll, key in
             return containsAll && contains(self.config.allConfigKeys, key)
         }
@@ -128,6 +148,47 @@ class DictionaryConfigLayerTests: XCTestCase
 
         let alien = config.get("totally bogus") as AlienType?
         XCTAssert(alien == nil)
+    }
+
+    func testGetSubconfigAtKeypath() {
+        let subconfig: Config? = config.get(keypath:["nested object", "key1", "key2"])
+        XCTAssert(subconfig != nil)
+
+        let string = subconfig!.get("string") as String?
+        XCTAssert(string == "bryn")
+
+        let double = subconfig!.get("double") as Double?
+        XCTAssertEqualWithAccuracy(double!, 23.8, 0.00001)
+    }
+
+    // @@TODO: finish this test and add it to dictionary layer tests
+    func testGetArrayOfSubconfigs() {
+        let subconfigs: [Config]? = config.get("array of subconfigs")
+        XCTAssert(subconfigs != nil)
+        XCTAssert(subconfigs?.count == 3)
+
+        let one = subconfigs![0]
+        XCTAssertEqual(one.allConfigKeys.count, 2)
+        let oneName: String? = one.get("name")
+        XCTAssert(oneName == "first")
+    }
+
+    func testIConfigBuildable()
+    {
+        let dict = [
+            "direction": "forward",
+            "year created": 2355,
+            "origin planet": "New Caprica",
+        ]
+
+        let config = Config(dictionary:dict)
+        let maybeTm = TimeMachine.build(config:config)
+        XCTAssertTrue(maybeTm.isSuccess())
+
+        let tm: TimeMachine = maybeTm.value()!
+        XCTAssert(tm.direction == .Forward)
+        XCTAssert(tm.yearCreated == 2355)
+        XCTAssert(tm.originPlanet == "New Caprica")
     }
 }
 

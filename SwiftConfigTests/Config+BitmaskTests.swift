@@ -31,6 +31,7 @@ extension MonsterAttributes: IBitmaskRepresentable, IAutoBitmaskable
 
 extension MonsterAttributes: IConfigRepresentable
 {
+    var configValue: String { return rawValue }
     static func fromConfigValue(configValue: String) -> MonsterAttributes? {
         return MonsterAttributes(rawValue: configValue)
     }
