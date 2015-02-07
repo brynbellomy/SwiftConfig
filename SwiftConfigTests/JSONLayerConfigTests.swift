@@ -146,7 +146,9 @@ class JSONConfigLayerTests: XCTestCase
     func test_BuilderOf_IConfigBuildable()
     {
         let config = Config(yamlFilename:"time-machine", bundle:NSBundle(forClass:JSONConfigLayerTests.self))!
-        let builder = BuilderOf<TimeMachine>(config:config)
+        var builder = BuilderOf<TimeMachine>()
+        builder.configure(config)
+
         let maybeTm: Result<TimeMachine> = builder.build()
         XCTAssertTrue(maybeTm.isSuccess())
 
