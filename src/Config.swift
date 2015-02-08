@@ -195,6 +195,19 @@ public struct Config
         return nil
     }
 
+    // MARK: Getter: dictionary of subconfigs
+    // @@TODO: get(key:String) -> [String: Config]? needs a test case
+    public func get (key:String) -> [String: Config]?
+    {
+        if let dictOfDicts = (get(key) as AnyObject?) as? [String: [String: AnyObject]] { // just... ouch
+             return dictOfDicts
+                        |> pairs
+                        |> mapRight { dict in Config(dictionary: dict) }
+                        |> mapToDictionary { $0 }
+        }
+        return nil
+    }
+
 
     // MARK: build an IConfigurableBuilder's product using all of the entries in this config
 
