@@ -1,0 +1,158 @@
+Config.swift
+	public struct Config
+	public struct Config
+	public struct Config
+	public var isEmpty: Bool
+	public private(set) var layers    = UnderlyingStackType()
+	public private(set) var overrides = Config.DictionaryLayer()
+	public init()
+	public init(layer:IConfigLayer)
+	public init <S: SequenceType where S.Generator.Element == IConfigLayer> (_ sequence: S)
+	public func get <T: IConfigRepresentable> (key:String) -> T?
+	public func get (key:String) -> AnyObject?
+	public func get <T: IConfigRepresentable, U: IConfigRepresentable> (keys one:String, _ two:String) -> (T?, U?)
+	public func get <T: IConfigRepresentable, U: IConfigRepresentable, V: IConfigRepresentable>
+        (keys one:String, _ two:String, _ three:String) -> (T?, U?, V?)
+	public func get <T: IConfigRepresentable, U: IConfigRepresentable, V: IConfigRepresentable, W: IConfigRepresentable>
+        (keys one:String, _ two:String, _ three:String, _ four:String) -> (T?, U?, V?, W?)
+	public func get <T: IConfigRepresentable> (key:String) -> [T]?
+	public func get <T: IConfigRepresentable> (#keys:String...) -> [T?]
+	public func get <T: IConfigRepresentable> (#keypath:[String]) -> T?
+	public func get(#keypath:[String]) -> Config?
+	public func get(#keypath:String...) -> Config?
+	public func get(key:String) -> Config
+	public func get <T: IConfigInitable> (key:String) -> T?
+	public func get <T: IConfigBuildable> (key:String) -> Result<T>
+	public func get <T: IConfigBuildable> (key:String) -> Result<[T]>
+	public func get
+        <K: IConfigRepresentable, V: IConfigBuildable where K: Hashable, K.ConfigValueType == String>
+        (key:String) -> Result<[K: V]>
+	public func get <B: IConfigurableBuilder> (key:String, var builder: B) -> Result<B.BuiltType>
+	public func get (key:String) -> [Config]?
+	public func get (key:String) -> [String: Config]?
+	public func buildWith <B: IConfigurableBuilder> (var builder:B) -> Result<B.BuiltType>
+	public func pluck (keys:String...) -> Config
+	public func pluck <T: IConfigInitable> (keys:String...) -> T?
+	public func pluck (keys:[String]) -> Config
+	public func pluck <T: IConfigInitable> (keys:[String]) -> T?
+	func keyToKeyValueTuple(key:String) -> (String, AnyObject)?
+	public func hasValueForKey(key:String) -> Bool
+	public struct Config
+	public var allConfigKeys: [String]
+	public func hasConfigValueForKey(key: String) -> Bool
+	public func configValueForKey(key: String) -> AnyObject?
+	public func configLayerForKey(key: String) -> IConfigLayer?
+	public func configLayerWithKeys(keys: [String]) -> Config
+	public struct Config
+	public var description: String
+	public var debugDescription: String
+	public struct Config
+	public struct Config
+Config.JSONLayer.swift
+	public init?(yamlFilename:String, bundle:NSBundle)
+	public init?(jsonFilename:String, bundle:NSBundle)
+	public struct JSONLayer
+	public init?(yamlFilename:String, bundle:NSBundle)
+	public init?(jsonFilename:String, bundle:NSBundle)
+	public init(json j:JSON)
+	public var allConfigKeys: [String]
+	public func hasConfigValueForKey(key:String) -> Bool
+	public func configValueForKey(key:String) -> AnyObject?
+	public func configLayerForKey(key:String) -> IConfigLayer?
+	public func configLayerWithKeys(keys:[String]) -> Config.JSONLayer
+	public var description: String
+	public var debugDescription : String
+
+	Config.JSONLayer
+	Config.JSONLayer
+	Config.DictionaryLayer
+	Config.DictionaryLayer
+	Config.DictionaryLayer
+	JSON
+IConfigInitable.swift
+	public protocol IConfigInitable
+	init?(config:Config)
+	public protocol IConfigBuildable
+	class func build(#config: Config) -> Result<Self>
+	public protocol IConfigurableBuilder
+	init()
+	mutating func configure(config:Config)
+	mutating func build() -> Result<BuiltType>
+IConfigRepresentable.swift
+	public protocol IConfigRepresentable
+	class func fromConfigValue(configValue: ConfigValueType) -> Self?
+	var configValue: ConfigValueType
+	public static func fromConfigValue(configValue:String) -> String?
+	public var configValue: String
+	public static func fromConfigValue(configValue:Int) -> Int?
+	public var configValue: Int
+	public static func fromConfigValue(configValue:Float) -> Float?
+	public var configValue: Float
+	public static func fromConfigValue(configValue:Double) -> Double?
+	public var configValue: Double
+	public static func fromConfigValue(configValue:Bool) -> Bool?
+	public var configValue: Bool
+	public var configValue: CGFloat
+	public static func fromConfigValue(configValue:CGFloat) -> CGFloat?
+Swift
+	struct Float
+	struct Double
+CoreGraphics
+	struct CGFloat
+Bitmask+Config.swift
+	public func get <T: protocol<IBitmaskRepresentable, IConfigRepresentable>> (key:String) -> Bitmask<T>?
+CGGeometry.h
+	struct CGSize
+	struct CGPoint
+	struct CGVector
+CGGeometry+Config.swift
+	public init?(config:Config)
+	public init?(config:Config)
+	public init?(config:Config)
+NSColor.h
+	class NSColor : NSObject, NSCopying, NSSecureCoding, NSCoding, NSPasteboardReading, NSObjectProtocol, NSPasteboardWriting
+	class NSColor : NSObject, NSCopying, NSSecureCoding, NSCoding, NSPasteboardReading, NSObjectProtocol, NSPasteboardWriting
+Color+Config.swift
+	public var configValue: String
+	public class func fromConfigValue(configValue:String) -> Self?
+	public struct ConfigurableBuilder: IConfigurableBuilder
+	public var rgba: (r:CGFloat?, g:CGFloat?, b:CGFloat?, a:CGFloat?) = (r:nil, g:nil, b:nil, a:nil)
+	public init()
+	public mutating func configure(config:Config)
+	public func build() -> Result<OSColor>
+	func missingValueFailure (name:String) -> Result<CGFloat>
+	func createColor(r:CGFloat)(g:CGFloat)(b:CGFloat)(a:CGFloat) -> OSColor
+Config.DictionaryLayer.swift
+	public init(dictionary:DictionaryLayer.DictionaryType)
+	public struct DictionaryLayer
+	public init()
+	public init(dictionary:DictionaryType)
+	public var allConfigKeys: [String]
+	public func hasConfigValueForKey(key:String) -> Bool
+	public func configValueForKey(key:String) -> AnyObject?
+	public func configLayerForKey(key:String) -> IConfigLayer?
+	public func configLayerWithKeys(keys:[String]) -> Config.DictionaryLayer
+	public mutating func setValueForConfigKey(key:String, _ value:AnyObject?)
+	public mutating func removeValueForConfigKey(key:String)
+	public var description      : String
+	public var debugDescription : String
+Config.Common.swift
+	public func loadBundleData (bundle:NSBundle, filename:String, ext:String) -> Result<NSData>
+	public init?(jsonFilename:String, bundle:NSBundle)
+	public init?(yamlFilename:String, bundle:NSBundle)
+BuilderOf.swift
+	public struct BuilderOf <T: IConfigBuildable>: IConfigurableBuilder
+	public var config = Config()
+	public init()
+	public func configure(c:Config)
+	public func build () -> Result<T>
+IConfigLayer.swift
+	public protocol IConfigLayer : DebugPrintable
+	var allConfigKeys : [String]
+	func hasConfigValueForKey(key:String) -> Bool
+	func configValueForKey(key:String) -> AnyObject?
+	func configLayerForKey(key:String) -> IConfigLayer?
+	func configLayerWithKeys(keys:[String]) -> Self
+	public protocol IMutableConfigLayer : IConfigLayer
+	mutating func setValueForConfigKey(key:String, _ value:AnyObject?)
+	mutating func removeValueForConfigKey(key:String)

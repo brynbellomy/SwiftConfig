@@ -1,6 +1,0 @@
-framework module Funky {
-  umbrella header "Pods-SwiftConfigTests-Funky-umbrella.h"
-
-  export *
-  module * { export * }
-}
