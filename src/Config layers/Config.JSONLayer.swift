@@ -32,16 +32,14 @@ public extension Config
 
     public struct JSONLayer
     {
-        private let json :JSON = JSON.nullJSON
+        private let json :JSON
 
         public init?(yamlFilename:String, bundle:NSBundle)
         {
             if let j = JSON(yamlFilename:yamlFilename, bundle:bundle) {
                 json = j
             }
-            else {
-                return nil
-            }
+            else { return nil }
         }
 
         public init?(jsonFilename:String, bundle:NSBundle)
@@ -49,9 +47,7 @@ public extension Config
             if let j = JSON(jsonFilename:jsonFilename, bundle:bundle) {
                 json = j
             }
-            else {
-                return nil
-            }
+            else { return nil }
         }
 
         public init(json j:JSON) {
@@ -80,7 +76,7 @@ extension Config.JSONLayer: IConfigLayer
     }
 
     public func configLayerForKey(key:String) -> IConfigLayer? {
-        if let dict = json[key].dictionaryObject? {
+        if let dict = json[key].dictionaryObject {
             return Config.DictionaryLayer(dictionary: dict)
         }
         return nil

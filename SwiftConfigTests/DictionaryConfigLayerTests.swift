@@ -190,6 +190,7 @@ class DictionaryConfigLayerTests: XCTestCase
         XCTAssert(tm.yearCreated == 2355)
         XCTAssert(tm.originPlanet == "New Caprica")
     }
+    
 }
 
 

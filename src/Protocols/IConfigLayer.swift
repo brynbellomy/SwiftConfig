@@ -23,6 +23,7 @@ public protocol IConfigLayer : DebugPrintable
 public protocol IMutableConfigLayer : IConfigLayer
 {
     mutating func setValueForConfigKey(key:String, _ value:AnyObject?)
+    mutating func setValueForConfigKeypath(keypath:[String], value:AnyObject?)
     mutating func removeValueForConfigKey(key:String)
 }
 

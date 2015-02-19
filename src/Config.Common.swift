@@ -43,7 +43,7 @@ public extension JSON
         {
             case let .Success(box):
                 let data = box.unbox
-                if let loadedYamlObject :AnyObject = YACYAMLKeyedUnarchiver.unarchiveObjectWithData(data, options:YACYAMLKeyedUnarchiverOptionNone) {
+                if let loadedYamlObject: AnyObject = YACYAMLKeyedUnarchiver.unarchiveObjectWithData(data) {
                     self = JSON(loadedYamlObject)
                 }
                 else {

@@ -22,9 +22,7 @@ extension CGSize: IConfigInitable
             width = w
             height = h
         }
-        else {
-            return nil
-        }
+        else { return nil }
     }
 }
 
@@ -37,12 +35,11 @@ extension CGPoint: IConfigInitable
 {
     public init?(config:Config)
     {
+        let keys = config.allConfigKeys
         if let (x, y) = config.get(keys:"x", "y") as (CGFloat?, CGFloat?) |> both {
             self = CGPoint(x:x, y:y)
         }
-        else {
-            return nil
-        }
+        else { return nil }
     }
 }
 
@@ -56,12 +53,10 @@ extension CGVector: IConfigInitable
 {
     public init?(config:Config)
     {
-        if let (dx, dy) = both(config.get("dx") as CGFloat?, config.get("dy") as CGFloat?)? {
+        if let (dx, dy) = config.get(keys:"dx", "dy") as (CGFloat?, CGFloat?) |> both {
             self = CGVector(dx:dx, dy:dy)
         }
-        else {
-            return nil
-        }
+        else { return nil }
     }
 }
 

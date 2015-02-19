@@ -23,13 +23,17 @@ extension Config
     {
         public typealias DictionaryType = [String: AnyObject]
 
-        private var dict: DictionaryType
+        public private(set) var dictionary: DictionaryType
 
-        public init()                          { dict = DictionaryType() }
-        public init(dictionary:DictionaryType) {
-            dict = DictionaryType()
-            for (key, value) in dictionary {
-                dict[key] = value
+        public init() {
+            dictionary = DictionaryType()
+        }
+        
+        public init(dictionary d:DictionaryType)
+        {
+            self = DictionaryLayer()
+            for (key, value) in d {
+                dictionary[key] = value
             }
         }
     }
@@ -38,26 +42,26 @@ extension Config
 
 extension Config.DictionaryLayer: IConfigLayer
 {
-    public var allConfigKeys: [String] { return Array(dict.keys) }
+    public var allConfigKeys: [String] { return Array(dictionary.keys) }
 
     public func hasConfigValueForKey(key:String) -> Bool {
-        return dict.indexForKey(key) != nil
+        return dictionary.indexForKey(key) != nil
     }
 
     public func configValueForKey(key:String) -> AnyObject? {
-        return dict[key]
+        return dictionary[key]
     }
 
     public func configLayerForKey(key:String) -> IConfigLayer? {
-        if let dict = dict[key] as? [String: AnyObject] {
-            return Config.DictionaryLayer(dictionary: dict)
+        if let dictionary = dictionary[key] as? [String: AnyObject] {
+            return Config.DictionaryLayer(dictionary: dictionary)
         }
         return nil
     }
 
     public func configLayerWithKeys(keys:[String]) -> Config.DictionaryLayer
     {
-        let newDict: DictionaryType = dict |> selectWhere { contains(keys, $0.0) }
+        let newDict: DictionaryType = dictionary |> selectWhere { contains(keys, $0.0) }
 
         return Config.DictionaryLayer(dictionary:newDict)
     }
@@ -66,20 +70,29 @@ extension Config.DictionaryLayer: IConfigLayer
 
 extension Config.DictionaryLayer: IMutableConfigLayer
 {
-    public mutating func setValueForConfigKey(key:String, _ value:AnyObject?) {
-        dict[key] = value
+    mutating public func setValueForConfigKey(key:String, _ value:AnyObject?) {
+        dictionary[key] = value
     }
 
-    public mutating func removeValueForConfigKey(key:String) {
-        dict.removeValueForKey(key)
+    mutating public func setValueForConfigKeypath(keypath:[String], value:AnyObject?) {
+//        var dict = dictionary as [String: Any]
+//        let val = value as Any?
+        switch setValueForKeypath(dictionary, keypath, value) {
+            case .Success(let box):   dictionary = box.unbox
+            case .Failure(let error): NSLog("[SwiftConfig.DictionaryLayer.setValueForConfigKeypath()] Error: \(error.localizedDescription)")
+        }
+    }
+
+    mutating public func removeValueForConfigKey(key:String) {
+        dictionary.removeValueForKey(key)
     }
 }
 
 
 extension Config.DictionaryLayer: Printable, DebugPrintable
 {
-    public var description      : String {
-        let str = dumpString(dict)
+    public var description: String {
+        let str = describe(dictionary) //dumpString(dictionary)
         return "DictionaryLayer \(str)"
     }
     public var debugDescription : String { return description }

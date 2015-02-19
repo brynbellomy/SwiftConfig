@@ -16,7 +16,7 @@ public protocol IConfigInitable {
 }
 
 public protocol IConfigBuildable {
-    class func build(#config: Config) -> Result<Self>
+    static func build(#config: Config) -> Result<Self>
 }
 
 

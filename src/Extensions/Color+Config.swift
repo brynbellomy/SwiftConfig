@@ -85,7 +85,7 @@ extension OSColor
                                 <*> rgba.b ?± missingValueFailure("blue")
                                 <*> rgba.a ?± missingValueFailure("alpha"))
 
-                        |> { $0.map(id) as Result<OSColor> }
+                        |> { $0.map { $0 as OSColor } }
         }
     }
 }

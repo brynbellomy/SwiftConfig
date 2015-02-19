@@ -13,7 +13,7 @@ public protocol IConfigRepresentable
 {
     typealias ConfigValueType
 
-    class func fromConfigValue(configValue: ConfigValueType) -> Self?
+    static func fromConfigValue(configValue: ConfigValueType) -> Self?
     var configValue: ConfigValueType { get }
 }
 

@@ -30,6 +30,7 @@
 		C541E6601A7D666000B37DEA /* JSONLayerConfigTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C541E6591A7D666000B37DEA /* JSONLayerConfigTests.swift */; };
 		C541E6611A7D666000B37DEA /* NSColorBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C541E65A1A7D666000B37DEA /* NSColorBuilderTests.swift */; };
 		C541E6621A7D666000B37DEA /* Tests.Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = C541E65B1A7D666000B37DEA /* Tests.Common.swift */; };
+		C550E5221A88304000F701AA /* ConfigTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C550E5211A88304000F701AA /* ConfigTests.swift */; };
 		D278D3B4BC3654384DDB9BA4 /* Pods_SwiftConfigTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13ECC8E338ECBA4584F19DFF /* Pods_SwiftConfigTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -74,6 +75,7 @@
 		C541E6591A7D666000B37DEA /* JSONLayerConfigTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONLayerConfigTests.swift; sourceTree = "<group>"; };
 		C541E65A1A7D666000B37DEA /* NSColorBuilderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSColorBuilderTests.swift; sourceTree = "<group>"; };
 		C541E65B1A7D666000B37DEA /* Tests.Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tests.Common.swift; sourceTree = "<group>"; };
+		C550E5211A88304000F701AA /* ConfigTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigTests.swift; sourceTree = "<group>"; };
 		F1D601119521B571F7037E4F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -168,6 +170,7 @@
 				C541E65B1A7D666000B37DEA /* Tests.Common.swift */,
 				C541E62F1A7D660300B37DEA /* Supporting Files */,
 				C53097951A85D74200664268 /* time-machine.yaml */,
+				C550E5211A88304000F701AA /* ConfigTests.swift */,
 			);
 			path = SwiftConfigTests;
 			sourceTree = "<group>";
@@ -452,6 +455,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C541E6611A7D666000B37DEA /* NSColorBuilderTests.swift in Sources */,
+				C550E5221A88304000F701AA /* ConfigTests.swift in Sources */,
 				C541E6621A7D666000B37DEA /* Tests.Common.swift in Sources */,
 				C541E65F1A7D666000B37DEA /* DictionaryConfigLayerTests.swift in Sources */,
 				C541E6601A7D666000B37DEA /* JSONLayerConfigTests.swift in Sources */,

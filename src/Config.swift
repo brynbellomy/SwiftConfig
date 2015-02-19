@@ -186,10 +186,21 @@ public struct Config
     }
 
 
+    // MARK: Getter: array of raw AnyObjects
+    // @@TODO: get(key:String) -> [AnyObject]? needs a test case
+    public func get (key:String) -> [AnyObject]?
+    {
+        if let arrayOfObjects = (get(key) as AnyObject?) as? [AnyObject] { // jesus, swift
+             return arrayOfObjects
+        }
+        return nil
+    }
+
+
     // MARK: Getter: array of subconfigs
     public func get (key:String) -> [Config]?
     {
-        if let arrayOfDicts = (get(key) as AnyObject?) as? [[String: AnyObject]] { // jesus, swift {
+        if let arrayOfDicts = (get(key) as AnyObject?) as? [[String: AnyObject]] { // woof
              return arrayOfDicts |> map‡ { Config(dictionary: $0) }
         }
         return nil
@@ -211,6 +222,11 @@ public struct Config
 
     // MARK: build an IConfigurableBuilder's product using all of the entries in this config
 
+    /**
+        Attempts to build an `IConfigurableBuilder`'s product using the receiver as its configuration.
+    
+        :returns: The result of `B.build()` (a `Result` containing the built product).
+     */
     public func buildWith <B: IConfigurableBuilder> (var builder:B) -> Result<B.BuiltType> {
         builder.configure(self)
         return builder.build()
@@ -219,16 +235,11 @@ public struct Config
 
     // MARK: Pluck (narrows all layers to given keys)
 
-    public func pluck (keys:String...) -> Config {
-        return pluck(keys)
-    }
-
-
-    public func pluck <T: IConfigInitable> (keys:String...) -> T? {
-        return pluck(keys)
-    }
-
-
+    /**
+        Creates a new `Config` containing the same config layers as the receiver, except that
+        each layer contains only keys in the whitelisted `keys` array.  This is useful for
+        splitting up messy, non-hierarchical configurations into their respective domains.
+     */
     public func pluck (keys:[String]) -> Config
     {
         let pluckedLayers = map(layers) { $0.configLayerWithKeys(keys) }
@@ -238,6 +249,15 @@ public struct Config
     }
 
 
+    /**
+        Creates a new `Config` containing the same config layers as the receiver, except that
+        each layer contains only keys in the whitelisted `keys` array.  This `Config` is then
+        used to initialize an object of type `T`. This is useful for splitting up messy,
+        non-hierarchical configurations into their respective domains.
+    
+        :returns: The result of `T(config:...)` (an `Optional`).  If the keys are not found on any layer, a `Config` is still returned.  You can check `isEmpty` on the returned `Config` to determine if a valid value was found.
+
+     */
     public func pluck <T: IConfigInitable> (keys:[String]) -> T? {
         let config = pluck(keys) as Config
         return T(config: config)
@@ -245,12 +265,46 @@ public struct Config
 
 
     /**
-        Creates a `Dictionary` from all of the keys available in all layers of the `Config` object.
+        Creates a new `Config` containing the same config layers as the receiver, except that
+        each layer contains only keys in the whitelisted `keys` array.  This `Config` is then
+        used to initialize an object of type `T`. This is useful for splitting up messy,
+        non-hierarchical configurations into their respective domains.
+    
+        :returns: The result of `T.build(config:...)` (a `Result`)
 
+     */
+    public func pluck <T: IConfigBuildable> (keys:[String]) -> Result<T> {
+        let config = pluck(keys) as Config
+        return T.build(config: config)
+    }
+
+
+    /**
+        This function is just shorthand for `pluck (keys:[String]) -> Config`.
+     */
+    public func pluck (keys:String...) -> Config {
+        return pluck(keys)
+    }
+
+
+    /**
+        This function is just shorthand for `pluck <T: IConfigInitable> (keys:[String]) -> T?`.
+     */
+    public func pluck <T: IConfigInitable> (keys:String...) -> T? {
+        return pluck(keys)
+    }
+
+
+
+
+    /**
+        Creates a `Dictionary` from all of the keys available in all layers of the `Config` object.  
         Each key is paired with the value from the topmost layer that has that key.  The dictionary
         returns the same values for each key as one would get from the `Config`'s `get(key:) -> AnyObject?`
         method.  If you don't need the underlying layers of a `Config` once it has been assembled, this can
         be a performance gain, as accessing a native Swift `Dictionary` is likely to be faster than `Config.get`.
+    
+        :returns: A `Dictionary` reflecting the topmost key/value pairs in the `Config`'s layer stack.
      */
     public func flatten() -> [String: AnyObject]
     {
@@ -270,13 +324,76 @@ public struct Config
         layers.  This can be useful in a multi-stage initialization process if some initialized object
         must be passed to a subsequent initializer through a `Config` object (see `IConfigInitable`,
         `IConfigRepresentable`, `IConfigurableBuilder`, et. al).
-    */
+     */
     public mutating func set(key:String, value:AnyObject?) {
         overrides.setValueForConfigKey(key, value)
     }
+    
+    public mutating func set(keypath:[String], value:AnyObject?) {
+        overrides.setValueForConfigKeypath(keypath, value:value)
+//        var current: Config?
+//        if keypath.count < 1 { return }
+//        
+//        let (first, rest) = (head(keypath)!, tail(keypath, 1) as [String])
+//        
+//        NSLog("Config.set(keypath:\(keypath), value:\(value))")
+//        NSLog("Config.set -> first = \(first)")
+//        NSLog("Config.set -> rest = \(rest)")
+//        
+//        if !overrides.hasConfigValueForKey(first) {
+//            overrides.setValueForConfigKey(first, [String: AnyObject]())
+//        }
+//        
+//        if let dict = (overrides.configValueForKey(first) as AnyObject?) as? [String: AnyObject]
+//        {
+//            var current = dict
+//            let (dictionaryLayerKeys, finalKey) = (dropLast(rest), last(rest))
+//            
+//            for key in dictionaryLayerKeys
+//            {
+//                if let next: AnyObject = current[key] {
+//                    if let nextDict = next as? [String: AnyObject] {
+//                        current = nextDict
+//                    }
+//                    else { fatalError("There was a value at key '\(first)' but it was not a Dictionary.") }
+//                }
+//                else {
+//                    let newDict = [String: AnyObject]()
+//                    current[key] = newDict
+//                    current = newDict
+//                }
+//            }
+//            
+//            NSLog("Config -> setting \(finalKey) to \(value)")
+//            current[finalKey!] = value
+//        }
+//        else { fatalError("There was a value at key '\(first)' but it was not a Dictionary.") }
+    }
 
+
+    /**
+        Returns `true` if one of the `Config`'s layers contains the specified `key`; `false` otherwise.
+     */
     public func hasValueForKey(key:String) -> Bool {
         return findLayerWithValueForKey(key) != nil
+    }
+
+
+    /**
+        Finds the topmost layer containing `key` and returns it.  If no layers contained the key, this method returns `nil`.
+     */
+    public func findLayerWithValueForKey (key:String) -> IConfigLayer?
+    {
+        if overrides.hasConfigValueForKey(key) {
+            return overrides
+        }
+
+        for layer in layers {
+            if layer.hasConfigValueForKey(key) {
+                return layer
+            }
+        }
+        return nil
     }
 
 
@@ -318,6 +435,7 @@ public struct Config
         return nil
     }
 
+
     /**
         Initializes an array of `IConfigBuildable` objects.
      */
@@ -326,7 +444,7 @@ public struct Config
         if let anyConfigValue: AnyObject = findLayerWithValueForKey(key)?.configValueForKey(key)
         {
             let nsarray = (anyConfigValue as? NSArray)!
-            return (nsarray as [NSDictionary])
+            return (nsarray as! [NSDictionary])
                             |> mapFilter { nsdict in
                                     if let dict = nsdict as? [String: AnyObject] {
                                         let subconfig = Config(dictionary:dict)
@@ -348,7 +466,8 @@ public struct Config
         method returns `.Failure`.
      */
     private func initializeBuildableDictionary
-        <K: IConfigRepresentable, V: IConfigBuildable where K.ConfigValueType == String> (#key:String) -> Result<[K: V]>
+        <K: IConfigRepresentable, V: IConfigBuildable where K.ConfigValueType == String>
+        (#key:String) -> Result<[K: V]>
     {
         let dictConfig = get(key) as Config
         if dictConfig.isEmpty {
@@ -376,22 +495,6 @@ public struct Config
     }
 
 
-    /**
-        Finds the topmost layer containing `key` and returns it.  If no layers contained the key, this method returns `nil`.
-     */
-    public func findLayerWithValueForKey(key:String) -> IConfigLayer?
-    {
-        if overrides.hasConfigValueForKey(key) {
-            return overrides
-        }
-
-        for layer in layers {
-            if layer.hasConfigValueForKey(key) {
-                return layer
-            }
-        }
-        return nil
-    }
 
 }
 
@@ -410,7 +513,7 @@ extension Config: IConfigLayer
     }
 
     public func hasConfigValueForKey(key: String) -> Bool {
-        if let layer = findLayerWithValueForKey(key)? {
+        if let layer = findLayerWithValueForKey(key) {
             return true
         }
         return false
